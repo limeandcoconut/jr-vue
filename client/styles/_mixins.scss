@@ -1,0 +1,99 @@
+// $yellow: #FAD21C;
+// $accent: #FAD21C;
+// $yellow: #BB1B00;
+$grey-light: #e2e2e2;
+$peach: #e7c2aa;
+
+@mixin desktop {
+    @media screen and (min-width: 414px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media screen and (max-width: 1028px) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width: 414px) {
+        @content;
+    }
+
+}
+
+@mixin tablet_mobile {
+    @include tablet {
+        @content;
+    }
+    @include mobile {
+        @content;
+    }
+}
+
+@mixin aktiv {
+    font-family: 'Aktiv Grotesk', sans-serif;
+}
+
+@mixin aktiv-light {
+    font-family: 'Aktiv Grotesk', sans-serif;
+    font-weight: 200;
+}
+
+@mixin aktiv-bold {
+    font-family: 'Aktiv Grotesk', sans-serif;
+    font-weight: bold;
+}
+// @mixin lato_light {
+//     @include lato;
+//     font-weight: 300;
+// }
+// @mixin lato_normal {
+//     @include lato;
+//     font-weight: 400;
+// }
+// @mixin lato_bold {
+//     @include lato;
+//     font-weight: 700;
+// }
+//
+// @mixin bitter {
+//     font-family: 'Bitter', arial, sans-serif;
+// }
+// @mixin bitter_regular {
+//     @include bitter;
+//     font-weight: 400;
+// }
+// @mixin bitter_bold {
+//     @include bitter;
+//     font-weight: 700;
+// }
+//
+// @mixin open_sans {
+//     font-family: 'Open Sans', sans-serif;
+// }
+// @mixin open_sans_thin {
+//     @include open_sans;
+//     font-weight: 300;
+// }
+// @mixin open_sans_normal {
+//     @include open_sans;
+//     font-weight: 400;
+// }
+// @mixin open_sans_semibold {
+//     @include open_sans;
+//     font-weight: 600;
+// }
+//
+// @mixin roboto {
+//     font-family: 'Roboto', 'Open Sans', sans-serif;
+// }
+// @mixin roboto_normal {
+//     @include roboto;
+//     font-weight: 400;
+// }
+//
+// @mixin bottom_border {
+//     box-shadow: 0 1px 0 0px #474747;
+// }

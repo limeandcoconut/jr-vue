@@ -1,0 +1,32 @@
+#header {
+    position: relative;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+.header {
+    &__logo {
+        position: absolute;
+        background-image: url('/img/jr.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+        top: 130px;
+        left: 50px;
+        width: 37px;
+        height: 37px;
+        z-index: 100;
+
+        &--animated {
+            animation: spin 0.9s linear;
+            animation-iteration-count: infinite;
+        }
+    }
+}

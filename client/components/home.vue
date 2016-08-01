@@ -1,0 +1,115 @@
+<template>
+    <div id="page-container">
+        <article class="project">
+
+
+
+            <section class="section section--header section--undiv">
+                <div class="section__aside">
+                </div>
+
+                <div class="section__main">
+                    <h2 class="section__copy">
+                        My name is James Ramirez. I love to make things that are useful and usable. I’ve had the privilege to work on awesome projects that cover different spectrums of design from digital, branding and print. Currently working as Lead Designer at Snapshot.
+                    </h2>
+                </div>
+            </section>
+
+            <section  class="section">
+                <div class="section__aside">
+                    Recent Projects.
+                </div>
+                <div class="section__main">
+                    <a v-link="'/project/' + project.projectUrl" class="project" v-for="project in projects">
+                        <div v-if="project.projectMainImage.src" class="project__img-container">
+                            <img :src="project.projectMainImage.src" :alt="project.projectMainImage.alt" class="section__image project__img">
+                            <div @mousemove="recordHover" class="project__img-overlay">
+                                <div @mousemove.stop="recordHoverFromChild" class="project__overlay-text" :style="{ left: overlayLeft, top: overlayTop }">
+                                    {{ project.projectName }}
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <!-- </template> -->
+                </div>
+            </section>
+
+            <section  class="section">
+                <div class="section__aside">
+                    Some achievements I'm proud of.
+                </div>
+                <div class="section__main">
+                    <div class="section__copy">
+                        Graduated Bible College in Hungry, EU. I was a <span class="underline">youth pastor</span>. <span class="underline">Graduated</span> college with a Bacholars in Web. I bought a <span class="underline">house</span>. I got <span class="underline">married</span> and soon to be a <span class="underline">dad</span>.
+                    </div>
+                </div>
+            </section>
+
+            <section  class="section">
+                <div class="section__aside">
+                    Here is some past work that I still like showing off.
+                </div>
+                <div class="section__main">
+                    <div class="section__copy">
+                        In most Unix-like operating systems, the RAID postarchive will not rapidly interact with a antiencoding parasitic capacitance.
+                    </div>
+                </div>
+            </section>
+
+        </article>
+    </div>
+</template>
+
+<script>
+
+import {kamp, test} from '../content/index.js';
+
+let projects = {
+    kamp,
+    test,
+};
+
+export default {
+    data() {
+        return {
+            projects,
+            overlayLeft: 0,
+            overlayTop: 0,
+        };
+    },
+    methods: {
+        recordHover(event) {
+            // console.log(event.offsetX);
+            // console.log(event.offsetY);
+            this.recordedHoverLeft = event.offsetX;
+            this.recordedHoverTop = event.offsetY;
+
+            window.raf(this.followText);
+            // this.followText();
+        },
+        recordHoverFromChild(event) {
+            // console.log(event.offsetX);
+            // console.log(event.offsetY);
+            this.recordedHoverLeft = event.offsetX + event.target.offsetLeft;
+            this.recordedHoverTop = event.offsetY + event.target.offsetTop;
+            console.log('to');
+            console.log(event.target.offsetTop);
+            console.log(event.target.offsetLeft);
+
+            window.raf(this.followText);
+            // this.followText();
+            event.stopPropagation;
+            return false;
+        },
+        followText() {
+            this.overlayLeft = this.recordedHoverLeft + 'px';
+            this.overlayTop = this.recordedHoverTop + 'px';
+            // console.log(this.overlayTop);
+            // console.log(this.overlayLeft);
+        }
+    },
+};
+</script>
+
+<style lang="scss">
+</style>
