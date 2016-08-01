@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
-const port = process.env.PORT ? process.env.PORT : 80;
+const port = process.env.PORT ? process.env.PORT : 3005;
 const path = require('path');
 GLOBAL.co = require('bluebird').coroutine;
 
