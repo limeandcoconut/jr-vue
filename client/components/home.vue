@@ -20,11 +20,11 @@
                     Recent Projects.
                 </div>
                 <div class="section__main">
-                    <a v-link="'/project/' + project.projectUrl" class="project" v-for="project in projects">
+                    <a v-link="'/project/' + project.projectUrl" v-for="project in projects" class="project">
                         <div v-if="project.projectMainImage.src" class="project__img-container">
                             <img :src="project.projectMainImage.src" :alt="project.projectMainImage.alt" class="section__image project__img">
-                            <div @mousemove="recordHover" class="project__img-overlay">
-                                <div @mousemove.stop="recordHoverFromChild" class="project__overlay-text" :style="{ left: overlayLeft, top: overlayTop }">
+                            <div @mousemove="recordHover" class="project__img-overlay" :index="$index">
+                                <div @mousemove.stop="recordHoverFromChild" class="project__overlay-text" v-show="activeHover == $index" :style="{ left: overlayLeft, top: overlayTop }">
                                     {{ project.projectName }}
                                 </div>
                             </div>
@@ -75,37 +75,31 @@ export default {
             projects,
             overlayLeft: 0,
             overlayTop: 0,
+            activeHover: 0,
         };
     },
     methods: {
         recordHover(event) {
-            // console.log(event.offsetX);
-            // console.log(event.offsetY);
+            this.recordedActiveHover = event.srcElement.getAttribute('index');
             this.recordedHoverLeft = event.offsetX;
             this.recordedHoverTop = event.offsetY;
 
             window.raf(this.followText);
-            // this.followText();
         },
         recordHoverFromChild(event) {
-            // console.log(event.offsetX);
-            // console.log(event.offsetY);
-            this.recordedHoverLeft = event.offsetX + event.target.offsetLeft;
-            this.recordedHoverTop = event.offsetY + event.target.offsetTop;
-            console.log('to');
-            console.log(event.target.offsetTop);
-            console.log(event.target.offsetLeft);
+            this.recordedActiveHover = event.srcElement.parentElement.getAttribute('index');
+
+            this.recordedHoverLeft = event.offsetX + event.target.offsetLeft - (event.target.offsetWidth / 2);
+            this.recordedHoverTop = event.offsetY + event.target.offsetTop - (event.target.offsetHeight / 3);
 
             window.raf(this.followText);
-            // this.followText();
-            event.stopPropagation;
+            event.stopPropagation();
             return false;
         },
         followText() {
             this.overlayLeft = this.recordedHoverLeft + 'px';
             this.overlayTop = this.recordedHoverTop + 'px';
-            // console.log(this.overlayTop);
-            // console.log(this.overlayLeft);
+            this.activeHover = this.recordedActiveHover;
         }
     },
 };

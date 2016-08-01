@@ -1,7 +1,7 @@
 #page-container {
     background-color: #fff;
     position: relative;
-    width: 100%;
+    width: 10tablet
 }
 
 .project {
@@ -9,7 +9,7 @@
 }
 
 .section {
-	position: relative;
+    position: relative;
     display: block;
     width: 100%;
     padding-bottom: 117px;
@@ -17,26 +17,42 @@
     font-size: 1.88rem;
     color: #000;
 
-	&__aside {
-		position: absolute;
-		top: 130px;
-		left: 0;
-		width: 25%;
-		padding-left: 51px;
-    padding-right: 20px;
-    font-size: 1.44rem;
-		color: $peach;
-    z-index: 10;
-	}
+    @include tablet {
+        padding-top: 30px;
+        padding-bottom: 35px;
+    }
 
-	&__main {
-		position: relative;
-		top: 0;
-		right: 0;
-		width: 100%;
-		padding-right: 25%;
-		padding-left: 25%;
-	}
+    &__aside {
+        position: absolute;
+        top: 130px;
+        left: 0;
+        width: 25%;
+        padding-left: 51px;
+        padding-right: 20px;
+        font-size: 1.44rem;
+        color: $peach;
+        z-index: 10;
+
+        @include tablet {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 0 5% 20px;
+        }
+    }
+
+    &__main {
+        position: relative;
+        top: 0;
+        right: 0;
+        width: 100%;
+        padding: 0 25%;
+
+        @include tablet {
+            padding: 0 5%;
+        }
+    }
 
     &__copy {
         padding-top: 130px;
@@ -54,43 +70,40 @@
         }
 
         &--large {
-          font-size: 2.5rem;
-          line-height: 1.5;
-          letter-spacing: 0.44px;
+            font-size: 2.5rem;
+            line-height: 1.5;
+            letter-spacing: 0.44px;
         }
     }
 
-	&__image {
-		display: block;
-		width: 100%;
-		height: auto;
-	}
+    &__image {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
 
     &::after {
         content: '';
-		background-color: $grey-light;
+        background-color: $grey-light;
         display: block;
         position: absolute;
         bottom: 0;
-		left: 25%;
+        left: 25%;
         width: 15%;
         height: 1px;
+
+        @include tablet {
+            content: none;
+            display: none;
+        }
     }
 
     &--header {
         padding-bottom: 0;
-
-        // &::after {
-        //     background-color: #fff;
-        // }
     }
 
     &--black {
         background-color: #000;
-
-        // &::after {
-        //     background-color: #000;
-        // }
     }
 
     &--undiv {
@@ -101,40 +114,57 @@
 }
 
 .project {
-  &__img-container {
-    position: relative;
-    margin-bottom: 80px;
-  }
 
-  &__img {
-  }
+    &__img-container {
+        position: relative;
+        margin-bottom: 80px;
 
-  &__img-overlay {
-    background-color: rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    font-size: 4.06rem;
-    text-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
-    color: #fff;
-    transition: opacity 0.2s;
-    opacity: 0;
-    z-index: 10;
-    cursor: pointer;
-    overflow: hidden;
-
-    &:hover {
-      opacity: 1;
+        @include tablet {
+            margin-bottom: 20px;
+        }
     }
-  }
 
-  &__overlay-text {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+    &__img {}
+
+    &__img-overlay {
+        background-color: rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 4.06rem;
+        color: #fff;
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+        transition: opacity 0.2s;
+        opacity: 0;
+        z-index: 10;
+        overflow: hidden;
+        cursor: pointer;
+
+        @include tablet {
+            display: none;
+        }
+
+        &:hover {
+            opacity: 1;
+
+            @include tablet {
+                opacity: 0;
+                display: none;
+            }
+        }
+    }
+
+    &__overlay-text {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 50%;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
 }

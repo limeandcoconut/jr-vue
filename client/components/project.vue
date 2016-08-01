@@ -95,8 +95,6 @@ export default {
         },
     },
     created() {
-        console.log('co');
-        console.log(this.projects);
     },
     methods: {
         retrieveProject() {

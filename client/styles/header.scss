@@ -1,5 +1,9 @@
 #header {
     position: relative;
+
+    @include tablet {
+        height: 100px;
+    }
 }
 
 @keyframes spin {
@@ -12,6 +16,7 @@
 }
 
 .header {
+
     &__logo {
         position: absolute;
         background-image: url('/img/jr.png');
@@ -24,9 +29,20 @@
         height: 37px;
         z-index: 100;
 
+        @include tablet {
+            top: 47px;
+            width: 35px;
+            height: 35px;
+            left: 5%;
+        }
+
         &--animated {
             animation: spin 0.9s linear;
             animation-iteration-count: infinite;
+
+            @include tablet {
+                animation: none;
+            }
         }
     }
 }

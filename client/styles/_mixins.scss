@@ -4,14 +4,14 @@
 $grey-light: #e2e2e2;
 $peach: #e7c2aa;
 
-@mixin desktop {
-    @media screen and (min-width: 414px) {
-        @content;
-    }
-}
-
+// @mixin desktop {
+//     @media screen and (min-width: 414px) {
+//         @content;
+//     }
+// }
+//
 @mixin tablet {
-    @media screen and (max-width: 1028px) {
+    @media screen and (max-width: 768px) {
         @content;
     }
 }
@@ -22,15 +22,15 @@ $peach: #e7c2aa;
     }
 
 }
-
-@mixin tablet_mobile {
-    @include tablet {
-        @content;
-    }
-    @include mobile {
-        @content;
-    }
-}
+//
+// @mixin tablet_mobile {
+//     @include tablet {
+//         @content;
+//     }
+//     @include mobile {
+//         @content;
+//     }
+// }
 
 @mixin aktiv {
     font-family: 'Aktiv Grotesk', sans-serif;
