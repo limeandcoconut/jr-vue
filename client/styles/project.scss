@@ -1,7 +1,7 @@
 #page-container {
     background-color: #fff;
     position: relative;
-    width: 10tablet
+    width: 100%
 }
 
 .project {
@@ -28,8 +28,10 @@
         left: 0;
         width: 25%;
         padding-left: 51px;
-        padding-right: 20px;
+        padding-right: 30px;
         font-size: 1.44rem;
+        line-height: 1.78;
+        font-weight: 500;
         color: $peach;
         z-index: 10;
 
@@ -74,6 +76,13 @@
             line-height: 1.5;
             letter-spacing: 0.44px;
         }
+
+        &--bold {
+          font-size: 1.63rem;
+          line-height: 1.58;
+          font-weight: 500;
+          letter-spacing: 0;
+        }
     }
 
     &__image {
@@ -111,23 +120,38 @@
             display: none;
         }
     }
+
+    &--alt {
+        color: $grey;
+
+        .section__aside {
+            color: $grey;
+        }
+
+        .section__copy {
+            color: $grey;
+        }
+    }
 }
 
 .project {
 
     &__img-container {
         position: relative;
-        margin-bottom: 80px;
 
         @include tablet {
             margin-bottom: 20px;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 80px;
         }
     }
 
     &__img {}
 
     &__img-overlay {
-        background-color: rgba(0, 0, 0, 0.2);
+        background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
         top: 0;
         right: 0;
@@ -137,7 +161,6 @@
         height: 100%;
         font-size: 4.06rem;
         color: #fff;
-        text-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
         transition: opacity 0.2s;
         opacity: 0;
         z-index: 10;
@@ -150,10 +173,12 @@
 
         &:hover {
             opacity: 1;
+            cursor: none;
 
             @include tablet {
                 opacity: 0;
                 display: none;
+                cursor: initial;
             }
         }
     }

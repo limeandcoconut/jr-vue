@@ -1,7 +1,8 @@
 <template>
     <header id="header">
         <a v-link="{path: '/'}" class="link--hidden">
-            <div @mouseover="beginAnimation" @mouseleave="declineAnimation" @animationiteration="checkAnimation" v-el:logo class="header__logo"></div>
+            <div @mouseover="beginAnimation" @mouseleave="declineAnimation" @animationiteration="checkAnimation" v-el:logo class="header__logo logo"></div>
+            <!-- <div @mouseover="beginAnimation" @mouseleave="declineAnimation" @animationiteration="checkAnimation" v-el:logo class="header__logo"></div> -->
         </a>
     </header>
 </template>
@@ -43,7 +44,8 @@ export default {
         // },
         beginAnimation() {
             if (!this.logoHovered) {
-                this.$els.logo.className += ' header__logo--animated';
+                this.$els.logo.className += ' logo--animated';
+                // this.$els.bubble.className += ' header__bubble--animated';
                 this.logoHovered = true;
                 this.logoAnimated = true;
             }
@@ -55,7 +57,7 @@ export default {
         },
         checkAnimation() {
             if (!this.logoHovered && this.logoAnimated) {
-                this.$els.logo.className = 'header__logo';
+                this.$els.logo.className = 'header__logo logo';
             }
         },
     },

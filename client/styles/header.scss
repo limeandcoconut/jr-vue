@@ -15,34 +15,104 @@
     }
 }
 
+@keyframes bubble {
+    0% {
+    }
+    95% {
+      transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
 .header {
 
     &__logo {
-        position: absolute;
-        background-image: url('/img/jr.png');
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-size: contain;
-        top: 130px;
-        left: 50px;
-        width: 37px;
-        height: 37px;
-        z-index: 100;
+      position: absolute;
+      top: 130px;
+      left: 50px;
+      z-index: 100;
+      @include tablet {
+        top: 47px;
+        width: 35px;
+        height: 35px;
+        left: 5%;
+      }
+        &::before {
+
+        }
+
+        // &::after {
+        //   content: '';
+        //   background-color: #00ffcb;
+        //   display: block;
+        //   position: absolute;
+        //   top: -100%;
+        //   left: 100%;
+        //   width: 100px;
+        //   height: 50px;
+        //   transform: scale(0, 0);
+        // }
+    }
+}
+
+.logo {
+  position: relative;
+  width: 37px;
+  height: 37px;
+
+  &::before {
+    content: '';
+    display: block;
+    background-image: url('/img/jr.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+  }
+
+
+  @include tablet {
+      top: 47px;
+      width: 35px;
+      height: 35px;
+      left: 5%;
+  }
+
+  &::after {
+    content: '';
+    background-image: url('/img/weee.png');
+    display: block;
+    position: absolute;
+    top: -60px;
+    left: -10px;
+    width: 100px;
+    height: 47px;
+    transform: scale(0, 0);
+    transition: transform 0.5s linear;
+  }
+
+  &--animated {
+      &::before {
+        animation: spin 0.9s linear;
+        animation-iteration-count: infinite;
 
         @include tablet {
-            top: 47px;
-            width: 35px;
-            height: 35px;
-            left: 5%;
+          animation: none;
         }
+      }
 
-        &--animated {
-            animation: spin 0.9s linear;
-            animation-iteration-count: infinite;
+      &::after {
+        animation: bubble 2.7s linear;
+        animation-iteration-count: 1;
+        animation-fill-mode: forwards;
 
-            @include tablet {
-                animation: none;
-            }
+        @include tablet {
+          animation: none;
         }
-    }
+      }
+  }
 }

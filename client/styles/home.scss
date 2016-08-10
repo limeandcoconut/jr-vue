@@ -1,3 +1,17 @@
+.work-link {
+    font-size: 45px;
+    line-height: 2;
+    width: 50%;
+    float: left;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+    &:nth-child(even) {
+        padding-left: 60px;
+    }
+}
+
 // .homepage_content {
 // 	@include lato_normal;
 // 	padding-bottom: 25px;
