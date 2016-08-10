@@ -143,15 +143,17 @@
             margin-bottom: 20px;
         }
 
-        &:not(:last-child) {
-            margin-bottom: 80px;
-        }
+    }
+
+    &:not(:last-child) {
+        display: block;
+        margin-bottom: 80px;
     }
 
     &__img {}
 
     &__img-overlay {
-        background-color: rgba(0, 0, 0, 0.4);
+        // background-color: rgba(0, 0, 0, 0.4);
         position: absolute;
         top: 0;
         right: 0;

@@ -6,10 +6,39 @@
     text-decoration: none;
     color: #000;
     font-weight: bold;
+    font-size: 45px;
+
+    @media screen and (max-width: 1725px) {
+        font-size: 2.5vw;
+    }
+
+    @include tablet {
+        width: 100%;
+        float: none;
+        display: block;
+        text-align: center;
+        font-size: 6vw;
+    }
+
+    @media screen and (max-width: 380px) {
+        font-size: 1.5rem;
+    }
+
+    // &__year {
+    //     text-decoration: none;
+    // }
 
     &:nth-child(even) {
-        padding-left: 60px;
+        padding-left: 2vw;
+
+        @include tablet {
+            padding-left: 0;
+        }
     }
+
+    // &:hover {
+    //     text-decoration: underline;
+    // }
 }
 
 // .homepage_content {
