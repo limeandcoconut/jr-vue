@@ -85,6 +85,7 @@
   &::after {
     content: '';
     background-image: url('/img/weee.png');
+    background-size: contain;
     display: block;
     position: absolute;
     top: -60px;
