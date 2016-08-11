@@ -7,11 +7,9 @@
     color: #000;
     font-weight: bold;
     font-size: 45px;
-
     @media screen and (max-width: 1725px) {
         font-size: 2.5vw;
     }
-
     @include tablet {
         width: 100%;
         float: none;
@@ -19,28 +17,22 @@
         text-align: center;
         font-size: 6vw;
     }
-
     @media screen and (max-width: 380px) {
         font-size: 1.5rem;
     }
-
     // &__year {
     //     text-decoration: none;
     // }
-
     &:nth-child(even) {
         padding-left: 2vw;
-
         @include tablet {
             padding-left: 0;
         }
     }
-
     // &:hover {
     //     text-decoration: underline;
     // }
 }
-
 // .homepage_content {
 // 	@include lato_normal;
 // 	padding-bottom: 25px;
@@ -52,13 +44,11 @@
 // 		margin: 0px;
 // 	}
 // }
-
 // .dashed_divider {
 // 	height: 1px;
 // 	width: 100%;
 // 	border-bottom: 2px dashed #CCCCCC;
 // }
-
 // .hero_featured_product {
 // 	width: 300px;
 // 	height: auto;
@@ -107,7 +97,6 @@
 // 		}
 // 	}
 // }
-
 // .product_section {
 // 	padding-top: 12px;
 //
@@ -233,7 +222,6 @@
 // 		margin-bottom: 18px;
 // 	}
 // }
-
 // .reviews {
 // 	position: relative;
 // 	border: 1px solid #CCCCCC;
