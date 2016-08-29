@@ -2,7 +2,7 @@ export default {
     projectName: 'Kamp Grizzly',
     projectUrl: 'kamp',
     projectMainImage: {
-        src: 'https://placehold.it/1000/700',
+        src: '/img/project-kamp-grizzly.jpg',
         alt: 'A beautiful placeholder image from unsplash',
     },
     projectHeader: 'In most Unix-like operating systems, the RAID postarchive will not rapidly interact with a antiencoding parasitic capacitance.',
@@ -18,7 +18,7 @@ export default {
                 },
                 {
                     type: 'img',
-                    src: 'https://placehold.it/1000/700',
+                    src: '/img/project-kamp-grizzly.png',
                     alt: 'A beautiful placeholder image from unsplash',
                 },
             ],
@@ -30,7 +30,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: 'https://placehold.it/1000/3000',
+                    src: '/img/project-kamp-highlight-1.jpg',
                     alt: 'A beautiful placeholder image from unsplash',
                 },
             ],
@@ -46,7 +46,7 @@ export default {
                 },
                 {
                     type: 'img',
-                    src: 'https://placehold.it/1000/1500',
+                    src: '/img/project-kamp-highlight-2.png',
                     alt: 'A beautiful placeholder image from unsplash',
                 },
             ],

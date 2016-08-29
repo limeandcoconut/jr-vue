@@ -27,6 +27,7 @@
         top: 130px;
         left: 0;
         width: 25%;
+        margin-top: -0.2em;
         padding-left: 51px;
         padding-right: 30px;
         font-size: 1.44rem;
@@ -35,12 +36,21 @@
         color: $peach;
         z-index: 10;
 
+
         @include tablet {
             position: relative;
             top: 0;
             left: 0;
             width: 100%;
             padding: 0 5% 20px;
+        }
+
+        &--work {
+            padding-top: 1.2em;
+
+            @media screen and (max-width: 1725px) {
+                padding-top: calc(2.5vw - .9em);
+            }
         }
     }
 
@@ -82,6 +92,11 @@
           line-height: 1.58;
           font-weight: 500;
           letter-spacing: 0;
+        }
+
+        &--med {
+            font-size: 1.88rem;
+            font-weight: 500;
         }
     }
 

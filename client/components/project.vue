@@ -71,11 +71,12 @@
 
 // import kamp from '../content/kamp.js';
 // import test from '../content/test.js';
-import {kamp, test} from '../content/index.js';
+import {kamp, test, adidas} from '../content/index.js';
 
 let projects = {
     kamp,
     test,
+    adidas, 
 };
 
 export default {

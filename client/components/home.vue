@@ -36,17 +36,17 @@
             </section>
 
             <section  class="section">
-                <div class="section__aside">
+                <div class="section__aside section__aside--work">
                     Here is some past work that I still like showing off.
                 </div>
                 <div class="section__main">
-                    <a href="#!" class="link work-link">Equip <span class="super">2014</span></a>
-                    <a href="#!" class="link work-link">Logos <span class="super">2014</span></a>
-                    <a href="#!" class="link work-link">Don't Buy The Tie <span class="super">2014</span></a>
-                    <a href="#!" class="link work-link">Door Of Hope <span class="super">2014</span></a>
-                    <a href="#!" class="link work-link">P Rod shoe box <span class="super">2014</span></a>
-                    <a href="#!" class="link work-link">Logos <span class="super">2014</span></a>
-                    <a href="#!" class="link work-link">Door Of Hope <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Equip <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Logos <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Don't Buy The Tie <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Door Of Hope <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">P Rod shoe box <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Logos <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Door Of Hope <span class="super">2014</span></a>
 
                     <div class="clearfix"></div>
                     <!-- <div class="section__copy">
@@ -60,7 +60,7 @@
                     Some achievements I'm proud of.
                 </div>
                 <div class="section__main">
-                    <div class="section__copy">
+                    <div class="section__copy section__copy--med">
 
                         Graduated Bible College in Hungry, EU. I was a
                         <span class="hover-highlight hover-highlight--inline link link--underlit">
@@ -101,7 +101,7 @@
                     Follow me.
                 </div>
                 <div class="section__main">
-                    <div class="section__copy">
+                    <div class="section__copy section__copy--med">
                         <a href="#!" class="link link--follow">Twitter</a> <a href="#!" class="link link--follow">Dribbble</a>
                     </div>
                 </div>
@@ -113,11 +113,12 @@
 
 <script>
 
-import {kamp, test} from '../content/index.js';
+import {kamp, test, adidas} from '../content/index.js';
 
 let projects = {
     kamp,
     test,
+    adidas,
 };
 
 export default {
