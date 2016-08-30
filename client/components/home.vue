@@ -113,11 +113,11 @@
 
 <script>
 
-import {kamp, test, adidas} from '../content/index.js';
+import {kamp, adidas} from '../content/index.js';
 
 let projects = {
     kamp,
-    test,
+    // test,
     adidas,
 };
 
