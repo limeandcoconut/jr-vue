@@ -8,6 +8,31 @@
     font-weight: 500;
     font-size: 45px;
 
+    // margin-top: calc(-0.35em - 0.005vw);
+        margin-top: -0.73em;
+
+    @media screen and (max-width: 1725px) {
+        margin-top: -0.70em;
+        // margin-top: calc(-2.5vw + .6rem);
+    }
+    //
+    @media screen and (max-width: 1335px) {
+        margin-top: -0.55em;
+    //     margin-top: calc(-2.5vw + .65rem);
+    }
+    //
+    @media screen and (max-width: 1100px) {
+        margin-top: -0.70em;
+    //     // margin-top: calc(-2.5vw + .65rem);
+    }
+
+    @media screen and (max-width: 1000px) {
+        margin-top: -0.35em;
+    //   margin-top: calc(-2.5vw + .7rem);
+    }
+
+
+
     @media screen and (max-width: 1725px) {
         font-size: 2.5vw;
     }
@@ -29,6 +54,10 @@
         @include tablet {
             padding-left: 0;
         }
+    }
+
+    &:nth-child(n + 3) {
+        margin-top: 0;
     }
     // &:hover {
     //     text-decoration: underline;

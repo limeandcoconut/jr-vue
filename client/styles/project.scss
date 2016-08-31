@@ -28,6 +28,7 @@
         left: 0;
         width: 25%;
         margin-top: -0.2em;
+        // padding-top: 0.6rem;
         padding-left: 51px;
         padding-right: 30px;
         font-size: 1.44rem;
@@ -46,11 +47,7 @@
         }
 
         &--work {
-            padding-top: 1.2em;
 
-            @media screen and (max-width: 1725px) {
-                padding-top: calc(2.5vw - .9em);
-            }
         }
     }
 
@@ -67,6 +64,7 @@
     }
 
     &__copy {
+        margin-top: -0.1rem;
         padding-top: 130px;
         padding-bottom: 117px;
         font-size: 1.19rem;
@@ -95,8 +93,9 @@
         }
 
         &--med {
+            margin-top: -0.9rem;
             font-size: 1.88rem;
-            font-weight: 500;
+            // font-weight: 500;
         }
     }
 
@@ -124,6 +123,10 @@
 
     &--header {
         padding-bottom: 0;
+
+        .section__copy {
+            margin-top: 0;
+        }
     }
 
     &--black {

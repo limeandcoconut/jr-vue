@@ -63,6 +63,7 @@ body {
     }
 
     &--follow {
+        padding: 0 0.1em;
         color: $grey;
         text-decoration: none;
 
@@ -107,6 +108,15 @@ body {
     font-weight: normal;
 }
 
+.sub {
+    font-size: 0.3em;
+    vertical-align: baseline;
+    height: 1em;
+    padding-bottom: 0.7em;
+    color: $grey;
+    font-weight: normal;
+}
+
 .hover-highlight {
     position: relative;
     display: block;
@@ -122,6 +132,7 @@ body {
         // top: -100px;
         // left: -100px;
         display: inline-block;
+        // padding-right: 0.2em;
         opacity: 0;
         transition: opacity 0.3s;
         z-index: 10;

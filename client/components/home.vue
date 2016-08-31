@@ -40,13 +40,13 @@
                     Here is some past work that I still like showing off.
                 </div>
                 <div class="section__main">
-                    <a href="#!" class="work-link">Equip <span class="super">2014</span></a>
-                    <a href="#!" class="work-link">Logos <span class="super">2014</span></a>
-                    <a href="#!" class="work-link">Don't Buy The Tie <span class="super">2014</span></a>
-                    <a href="#!" class="work-link">Door Of Hope <span class="super">2014</span></a>
-                    <a href="#!" class="work-link">P Rod shoe box <span class="super">2014</span></a>
-                    <a href="#!" class="work-link">Logos <span class="super">2014</span></a>
-                    <a href="#!" class="work-link">Door Of Hope <span class="super">2014</span></a>
+                    <a href="#!" class="work-link">Equip <span class="sub">2014</span></a>
+                    <a href="#!" class="work-link">Logos <span class="sub">2014</span></a>
+                    <a href="#!" class="work-link">Don't Buy The Tie <span class="sub">2014</span></a>
+                    <a href="#!" class="work-link">Door Of Hope <span class="sub">2014</span></a>
+                    <a href="#!" class="work-link">P Rod shoe box <span class="sub">2014</span></a>
+                    <a href="#!" class="work-link">Logos <span class="sub">2014</span></a>
+                    <a href="#!" class="work-link">Door Of Hope <span class="sub">2014</span></a>
 
                     <div class="clearfix"></div>
                     <!-- <div class="section__copy">
@@ -102,7 +102,7 @@
                 </div>
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
-                        <a href="#!" class="link link--follow">Twitter</a> <a href="#!" class="link link--follow">Dribbble</a>
+                        <a href="#!" class="link link--follow">Twitter </a>   <a href="#!" class="link link--follow">       Dribbble</a>
                     </div>
                 </div>
             </section>
