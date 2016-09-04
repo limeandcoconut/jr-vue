@@ -6,9 +6,9 @@ import Auth from './components/layouts/auth.vue';
 
 import kamp from './content/kamp.js';
 
-let projects = {
-    kamp,
-};
+// let projects = {
+//     kamp,
+// };
 
 export default {
     '/': {

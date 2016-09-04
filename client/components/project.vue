@@ -16,7 +16,7 @@
             </section>
 
             <template v-for="section in project.sections">
-                <section  :class="{ 'section--undiv' : !section.hasDivider }" class="section" :style="{backgroundColor: section.sectionColor }">
+                <section  :class="{ 'section--undiv' : !section.hasDivider }" class="section" :style="{backgroundColor: section.sectionColor, color: section.copyColor}">
                     <!-- v-if="section.color !== '#FFF'" -->
                 <!-- <section v-else class="section"> -->
                     <div class="section__aside">
@@ -30,6 +30,9 @@
                                 {{ content.content }}
                             </p>
                             <img v-if="content.type === 'img'" :src="content.src" :alt="content.alt" class="section__image">
+                            <fader v-if="content.type === 'fader'" :slides="content.slides">
+
+                            </fader>
                         </template>
 
                     </div>
@@ -70,7 +73,8 @@
 <script>
 
 // import kamp from '../content/kamp.js';
-// import test from '../content/test.js';
+import Fader from './fader.vue';
+// console.log(Fader);
 import {kamp, adidas} from '../content/index.js';
 
 let projects = {
@@ -89,6 +93,9 @@ export default {
             project,
             // editMode,
         };
+    },
+    components: {
+        Fader,
     },
     watch: {
         $route() {

@@ -245,3 +245,31 @@
             color: #fff;
     }
 }
+
+.fader {
+    position: relative;
+    text-align: center;
+
+    &__slide {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: opacity 1s;
+        opacity: 0;
+        // transform-origin: center;
+        // z-index: 1;
+        -webkit-backface-visibility: hidden;
+
+        &--active {
+            position: relative;
+            opacity: 1;
+        }
+    }
+
+    &__indicator {
+        padding-top: 50px;
+        font-size: 1.56rem;
+        font-weight: normal;
+        line-height: 1;
+    }
+}

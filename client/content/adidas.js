@@ -50,12 +50,25 @@ export default {
         {
             sectionTitle: '',
             sectionColor: '#000',
+            copyColor: '#fff',
             hasDivider: false,
             sectionContent: [
                 {
-                    type: 'img',
-                    src: '/img/project-adidas-highlight-3.png',
-                    alt: 'A beautiful placeholder image from unsplash',
+                    type: 'fader',
+                    slides: [
+                        {
+                            src: '/img/project-adidas-highlight-3.png',
+                            alt: 'A beautiful placeholder image from unsplash',
+                        },
+                        {
+                            src: '/img/project-adidas-highlight-3-2.png',
+                            alt: 'A beautiful placeholder image from unsplash',
+                        },
+                        {
+                            src: '/img/project-adidas-highlight-3-3.png',
+                            alt: 'A beautiful placeholder image from unsplash',
+                        },
+                    ],
                 },
             ],
         },
