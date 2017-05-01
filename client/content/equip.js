@@ -1,17 +1,16 @@
 export default {
-    projectName: 'Kamp Grizzly',
-    projectUrl: 'kamp',
+    projectName: 'Equip',
+    projectUrl: 'equip',
     projectCoverImage: {
-        src: '/img/project-kamp-grizzly-cover.jpg',
+        src: '/img/project-equip-cover.jpg',
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
-        src: '/img/project-kamp-grizzly.png',
+        src: '/img/project-equip.jpg',
         alt: 'A beautiful image representing this project',
-        misalign: true,
     },
     projectInfo: {
-        color: '#454444',
+        color: '#3333fc',
         copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.' ,
         contextInfo: [
             {
@@ -33,22 +32,37 @@ export default {
     },
     sections: [
         {
-            sectionColor: '#191919',
+            sectionColor: '#f0efee',
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-kamp-grizzly-single.jpg',
+                    spaced: true,
+                    src: '/img/project-equip-single-1.png',
                     alt: 'A beautiful image representing this project',
                 },
-            ],
-        },
-        {
-            sectionColor: '191919',
-            sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-kamp-grizzly-multi.jpg',
+                    full: true,
+                    src: '/img/project-equip-full-1.jpg',
                     alt: 'A beautiful image representing several pages',
+                },
+                {
+                    type: 'img',
+                    spaced: true,
+                    src: '/img/project-equip-single-2.png',
+                    alt: 'A beautiful image representing this project',
+                },
+                {
+                    type: 'img',
+                    full: true,
+                    src: '/img/project-equip-full-2.jpg',
+                    alt: 'A beautiful image representing several pages',
+                },
+                {
+                    type: 'img',
+                    spaced: true,
+                    src: '/img/project-equip-single-3.png',
+                    alt: 'A beautiful image representing this project',
                 },
             ],
         },

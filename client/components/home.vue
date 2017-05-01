@@ -1,16 +1,16 @@
 <template>
-    <div id="page-container">
+    <div id="page-container home">
         <article class="project">
 
 
 
-            <section class="section section--header section--undiv">
+            <section class="section section--header-align">
                 <div class="section__aside">
                 </div>
 
                 <div class="section__main">
-                    <h2 class="section__copy section__copy--bold">
-                        My name is James Ramirez. I love to make things that are useful and usable. I’ve had the privilege to work on awesome projects that cover different spectrums of design from digital, branding and print. Currently working as Lead Designer at Snapshot.
+                    <h2 class="section__copy section__copy--large">
+                        My name is James Ramirez. I love to make things that are useful and usable.
                     </h2>
                 </div>
             </section>
@@ -21,8 +21,8 @@
                 </div>
                 <div class="section__main">
                     <a v-link="'/project/' + project.projectUrl" v-for="project in projects" class="project">
-                        <div v-if="project.projectMainImage.src" class="project__img-container hover-highlight">
-                            <img :src="project.projectMainImage.src" :alt="project.projectMainImage.alt" class="section__image project__img">
+                        <div v-if="project.projectCoverImage.src" class="project__img-container hover-highlight">
+                            <img :src="project.projectCoverImage.src" :alt="project.projectCoverImage.alt" class="section__image project__img">
                             <!-- <div @mousemove="recordHover" class="project__img-overlay" :index="$index"> -->
                                 <div  class="project__overlay-text hover-highlight__follow"  :style="{ left: overlayLeft, top: overlayTop }">
                                     {{ project.projectName }}
@@ -32,26 +32,6 @@
                         </div>
                     </a>
                     <!-- </template> -->
-                </div>
-            </section>
-
-            <section  class="section">
-                <div class="section__aside section__aside--work">
-                    Here is some past work that I still like showing off.
-                </div>
-                <div class="section__main">
-                    <a href="#!" class="work-link">Equip <span class="sub">2014</span></a>
-                    <a href="#!" class="work-link">Logos <span class="sub">2014</span></a>
-                    <a href="#!" class="work-link">Don't Buy The Tie <span class="sub">2014</span></a>
-                    <a href="#!" class="work-link">Door Of Hope <span class="sub">2014</span></a>
-                    <a href="#!" class="work-link">P Rod shoe box <span class="sub">2014</span></a>
-                    <a href="#!" class="work-link">Logos <span class="sub">2014</span></a>
-                    <a href="#!" class="work-link">Door Of Hope <span class="sub">2014</span></a>
-
-                    <div class="clearfix"></div>
-                    <!-- <div class="section__copy">
-                        In most Unix-like operating systems, the RAID postarchive will not rapidly interact with a antiencoding parasitic capacitance.
-                    </div> -->
                 </div>
             </section>
 
@@ -80,7 +60,7 @@
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-house.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
                         </span>
-                         I got
+                        I got
                         <span class="hover-highlight hover-highlight--inline link link--underlit">
                             married
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-married.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
@@ -96,9 +76,9 @@
                 </div>
             </section>
 
-            <section  class="section section--alt">
+            <section  class="section">
                 <div class="section__aside">
-                    Follow me.
+                    Follow my narcissism.
                 </div>
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
@@ -113,12 +93,14 @@
 
 <script>
 
-import {kamp, adidas} from '../content/index.js';
+import {kamp, adidas, equip, kbs, misc} from '../content/index.js';
 
 let projects = {
-    kamp,
-    // test,
     adidas,
+    kamp,
+    equip,
+    kbs,
+    misc,
 };
 
 export default {

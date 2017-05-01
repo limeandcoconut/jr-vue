@@ -26,10 +26,10 @@ export default {
     //     page: 'Project',
     //     editMode: true,
     // },
-    '/clever': {
-        component: Default,
-        page: 'Clever',
-    },
+    // '/clever': {
+    //     component: Default,
+    //     page: 'Clever',
+    // },
     '/404': {
         component: Default,
         name: '404',

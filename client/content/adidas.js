@@ -1,86 +1,77 @@
 export default {
-    projectName: 'ADIDAS WOMENS',
+    projectName: 'Adidas Women\'s',
     projectUrl: 'adidas',
-    projectMainImage: {
-        src: '/img/project-adidas-womens.jpg',
-        alt: 'A beautiful placeholder image from unsplash',
+    projectCoverImage: {
+        src: '/img/project-adidas-womens-cover.jpg',
+        alt: 'A beautiful image representing this project',
     },
-    projectHeader: 'In any event where the process is both swapped out and blocked, the occlusion processing automaton should not quickly accept a guidance function.',
+    projectMainImage: {
+        src: '/img/project-adidas-womens.png',
+        alt: 'A beautiful image representing this project',
+        misalign: true,
+    },
+    projectInfo: {
+        color: '#1F8B80',
+        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.' ,
+        contextInfo: [
+            {
+                copy: 'Working With',
+            },
+            {
+                copy: 'Clever.ly',
+                spaced: true,
+            },
+            {
+                copy: 'Visit The Site',
+            },
+            {
+                copy: 'adidas.com/us/springissue',
+                link: true,
+                href: 'http://adidas.com/us/springissue',
+            },
+        ],
+    },
     sections: [
         {
-            sectionTitle: 'Adidas Womens',
+            sectionColor: '#f0efee',
+            sectionContent: [
+                {
+                    type: 'img',
+                    src: '/img/project-adidas-womens-single.jpg',
+                    alt: 'A beautiful image representing this project',
+                },
+            ],
+        },
+        {
+            sectionColor: '#FFE7E4',
+            sectionContent: [
+                {
+                    type: 'img',
+                    src: '/img/project-adidas-womens-multi.png',
+                    alt: 'A beautiful image representing several pages',
+                },
+            ],
+        },
+        {
             sectionColor: '#fff',
-            hasDivider: true,
-            sectionContent: [
-                {
-                    type: 'copy',
-                    content: 'AllIn computing, the auxiliary subdivision should not magically provide a context for the illumination circuit protocol, likewise, a integrated transmicroprocessor will systematically interact with the ambient bidirectional hardware. For certain types of computing applications, the buffering neural computer may or may not repeatedly find the subsurface framework. At any specific time, the temporary function may infinitely overload the abstraction function, but a hyperthreaded clustered infrastructure can not hourly enable a HDR near-field algorithm.',
-                },
-                {
-                    type: 'img',
-                    src: '/img/project-adidas-womens.png',
-                    alt: 'A beautiful placeholder image from unsplash',
-                },
-            ],
-        },
-        {
-            sectionTitle: '',
-            hasDivider: false,
-            sectionColor: '#EBD6D6',
-            sectionContent: [
-                {
-                    type: 'img',
-                    src: '/img/project-adidas-highlight-1.jpg',
-                    alt: 'A beautiful placeholder image from unsplash',
-                },
-            ],
-        },
-        {
-            sectionTitle: '',
-            sectionColor: '#fff',
-            hasDivider: false,
-            sectionContent: [
-                {
-                    type: 'img',
-                    src: '/img/project-adidas-highlight-2.jpg',
-                    alt: 'A beautiful placeholder image from unsplash',
-                },
-            ],
-        },
-        {
-            sectionTitle: '',
-            sectionColor: '#000',
-            copyColor: '#fff',
-            hasDivider: false,
+            copyColor: '#000',
             sectionContent: [
                 {
                     type: 'fader',
                     slides: [
                         {
-                            src: '/img/project-adidas-highlight-3.png',
-                            alt: 'A beautiful placeholder image from unsplash',
+                            src: '/img/project-adidas-womens-fader-1.png',
+                            alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-adidas-highlight-3-2.png',
-                            alt: 'A beautiful placeholder image from unsplash',
+                            src: '/img/project-adidas-womens-fader-2.png',
+                            alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-adidas-highlight-3-3.png',
-                            alt: 'A beautiful placeholder image from unsplash',
+                            src: '/img/project-adidas-womens-fader-3.png',
+                            alt: 'A beautiful image representing this project',
                         },
                     ],
-                },
-            ],
-        },
-        {
-            sectionTitle: '',
-            sectionColor: '#EBE2D6',
-            hasDivider: false,
-            sectionContent: [
-                {
-                    type: 'img',
-                    src: '/img/project-adidas-highlight-4.jpg',
-                    alt: 'A beautiful placeholder image from unsplash',
                 },
             ],
         },

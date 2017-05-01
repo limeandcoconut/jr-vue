@@ -14,6 +14,8 @@
     width: 100%;
     padding-bottom: 117px;
     padding-top: 130px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 1.88rem;
     color: #000;
 
@@ -34,7 +36,7 @@
         font-size: 1.44rem;
         line-height: 1.78;
         font-weight: 500;
-        color: $peach;
+        color: $black;
         z-index: 10;
 
 
@@ -46,9 +48,9 @@
             padding: 0 5% 20px;
         }
 
-        &--work {
+        // &--work {
 
-        }
+        // }
     }
 
     &__main {
@@ -61,6 +63,27 @@
         @include tablet {
             padding: 0 5%;
         }
+    }
+
+    &__body {
+    }
+
+    &__left,
+    &__right {
+        display: block;
+        width: 50%;
+        min-height: 100%;
+        flex-grow: 1;
+    }
+
+    &__primary {
+        flex-grow: 2;
+        margin-right: 20%;
+    }
+
+    &__context {
+        flex-grow: 1;
+        font-size: 1.56rem;
     }
 
     &__copy {
@@ -80,9 +103,9 @@
         }
 
         &--large {
-            font-size: 2.5rem;
-            line-height: 1.5;
-            letter-spacing: 0.44px;
+            font-size: 2.81rem;
+            line-height: 1.35;
+            // letter-spacing: 0.44px;
         }
 
         &--bold {
@@ -99,10 +122,46 @@
         }
     }
 
+    &__title {
+        font-size: 6.25rem;
+    }
+
     &__image {
         display: block;
         width: 100%;
         height: auto;
+
+        &--right {
+            width: calc(100% + 50px);
+            margin-right: -50px;
+        }
+
+        &--left {
+            width: calc(100% + 50px);
+            margin-left: -50px;
+        }
+
+        &--full {
+            width: calc(100% + 100px);
+            margin-left: -50px;
+        }
+
+        &--auto {
+            width: auto;
+            margin: 0 auto;
+            max-width: 100%;
+        }
+
+        &--spaced {
+            margin-top: 50px;
+            margin-bottom: 50px;
+        }
+
+        &--hero {
+            margin-top: -217px;
+            // width: auto;
+            // height: calc(100% + 217px);
+        }
     }
 
     &::after {
@@ -114,6 +173,7 @@
         left: 25%;
         width: 15%;
         height: 1px;
+        display: none;
 
         @include tablet {
             content: none;
@@ -121,12 +181,48 @@
         }
     }
 
+    &--beside {
+    }
+
     &--header {
+        margin-top: 180px;
+        padding-top: 0;
+        // padding-bottom: 0;
+
+        .section__copy {
+            margin-top: 0;
+        }
+    }
+
+    &--header-align {
+        margin-top: 128px;
+        padding-top: 0;
         padding-bottom: 0;
 
         .section__copy {
             margin-top: 0;
         }
+    }
+
+    &--header-misalign {
+        padding-bottom: 0;
+
+        &__title {
+            margin-top: -8rem;
+        }
+    }
+
+    &--split {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        flex-direction: row;
+    }
+
+    &--info {
+        color: $white;
+        min-height: 80vh;
     }
 
     &--black {
@@ -149,6 +245,31 @@
         .section__copy {
             color: $grey;
         }
+    }
+}
+
+.context {
+    color: $white;
+    padding-bottom: 12px;
+
+    &--link {
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:visited {
+            color: $white;
+            text-decoration: none;
+        }
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+    }
+
+    &--spaced {
+        padding-bottom: 40px;
     }
 }
 
@@ -242,27 +363,38 @@
         opacity: 0;
         // transition: opacity 0.2s;
         font-size: 4.06rem;
-            color: #fff;
+            color: $black;
     }
 }
 
 .fader {
     position: relative;
     text-align: center;
+    // max-height: 80vh;
+    margin: 0 auto;
 
     &__slide {
+        display: block;
         position: absolute;
         top: 0;
-        left: 0;
-        transition: opacity 1s;
+        // left: 50%;
         opacity: 0;
+
+        // transform: translateX(-50%);
+        // max-height: 80vh;
         // transform-origin: center;
         // z-index: 1;
         -webkit-backface-visibility: hidden;
+        animation: fade-out 400ms ease-in;
 
         &--active {
             position: relative;
+        //     left: 50%;
+        // transform: translateX(-50%);
+            transition: opacity 400ms ease-in-out;
             opacity: 1;
+            animation: none;
+            z-index: 100;
         }
     }
 
@@ -271,5 +403,19 @@
         font-size: 1.56rem;
         font-weight: normal;
         line-height: 1;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

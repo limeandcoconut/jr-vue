@@ -2,7 +2,11 @@
     <footer id="footer" class="hover-highlight">
         <!-- <div class="footer__copyright"> -->
             <!-- Copyright &copy; {{ moment(new Date()).format('YYYY') }} -->
-            <div class="footer__mailto hover-highlight__follow" :style="{ left: overlayLeft, top: overlayTop }">Contact</div>
+            <div class="footer__mailto hover-highlight__follow" :style="{ left: overlayLeft, top: overlayTop }">
+                Email
+                <br>
+                James Ramirez
+            </div>
             <a href="mailto:james@snapshot.is" class="hover-highlight__target" @mousemove="recordHover"></a>
         <!-- </div> -->
     </footer>

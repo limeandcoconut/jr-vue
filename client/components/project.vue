@@ -4,33 +4,90 @@
 
 
 
-            <section class="section section--header section--undiv">
-                <div class="section__aside">
+            <section
+            class="section section--header section--split"
+            :class="{'section--header-misalign': project.projectMainImage.misalign}"
+            >
+                <div class="section__left">
+                    <h2 class="section__title">
+                        {{ project.projectName }}
+                    </h2>
                 </div>
 
-                <div class="section__main">
+                <div class="section__right">
+                    <img
+                    :src="project.projectMainImage.src"
+                    :alt="project.projectMainImage.alt"
+                    class="section__image section__image--right"
+                    :class="{'section__image--hero': project.projectMainImage.hero}"
+                    >
+                </div>
+            </section>
+
+            <section
+            class="section section--info section--split"
+            :style="{'background-color': project.projectInfo.color}"
+            >
+                <div class="section__primary">
                     <h2 class="section__copy section__copy--large">
-                        {{ project.projectHeader }}
+                        {{ project.projectInfo.copy }}
                     </h2>
+                </div>
+
+                <div class="section__context">
+                    <template v-for="context in project.projectInfo.contextInfo">
+                        <div
+                        v-if="!context.link"
+                        class="context"
+                        :class="{'context--spaced': context.spaced}"
+                        >
+                            {{context.copy}}
+                        </div>
+                        <a
+                        v-else
+                        :href="context.href"
+                        target="_blank"
+                        class="context context--link"
+                        :class="{'context--spaced': context.spaced}"
+                        >
+                            {{context.copy}}
+                        </a>
+                    </template>
                 </div>
             </section>
 
             <template v-for="section in project.sections">
-                <section  :class="{ 'section--undiv' : !section.hasDivider }" class="section" :style="{backgroundColor: section.sectionColor, color: section.copyColor}">
+                <section
+                class="section"
+                :style="{backgroundColor: section.sectionColor, color: section.copyColor}"
+                >
                     <!-- v-if="section.color !== '#FFF'" -->
                 <!-- <section v-else class="section"> -->
-                    <div class="section__aside">
-                        {{ section.sectionTitle }}
-                    </div>
 
-                    <div class="section__main">
+                    <div class="section__body">
 
                         <template v-for="content in section.sectionContent">
-                            <p v-if="content.type === 'copy'" class="section__copy">
+                            <p
+                            v-if="content.type === 'copy'"
+                            class="section__copy"
+                            >
                                 {{ content.content }}
                             </p>
-                            <img v-if="content.type === 'img'" :src="content.src" :alt="content.alt" class="section__image">
-                            <fader v-if="content.type === 'fader'" :slides="content.slides">
+                            <img
+                            v-if="content.type === 'img'"
+                            :src="content.src"
+                            :alt="content.alt"
+                            class="section__image"
+                            :class="{
+                                'section__image--full': content.full,
+                                'section__image--spaced': content.spaced,
+                                'section__image--auto': content.auto,
+                            }"
+                            >
+                            <fader
+                            v-if="content.type === 'fader'"
+                            :slides="content.slides"
+                            >
 
                             </fader>
                         </template>
@@ -75,12 +132,14 @@
 // import kamp from '../content/kamp.js';
 import Fader from './fader.vue';
 // console.log(Fader);
-import {kamp, adidas} from '../content/index.js';
+import {kamp, adidas, equip, kbs, misc} from '../content/index.js';
 
 let projects = {
-    kamp,
-    // test,
     adidas,
+    kamp,
+    equip,
+    kbs,
+    misc,
 };
 
 export default {
