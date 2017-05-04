@@ -7,7 +7,7 @@
                 <br>
                 James Ramirez
             </div>
-            <a href="mailto:james@snapshot.is" class="hover-highlight__target" @mousemove="recordHover"></a>
+            <a href="mailto:ramirez.c.james@gmail.com" class="hover-highlight__target" @mousemove="recordHover"></a>
         <!-- </div> -->
     </footer>
 </template>

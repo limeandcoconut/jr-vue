@@ -8,11 +8,11 @@ export default {
     projectMainImage: {
         src: '/img/project-adidas-womens.png',
         alt: 'A beautiful image representing this project',
-        misalign: true,
+        // misalign: true,
     },
     projectInfo: {
-        color: '#1F8B80',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.' ,
+        color: '#02c09d',
+        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
         contextInfo: [
             {
                 copy: 'Working With',
@@ -43,7 +43,7 @@ export default {
             ],
         },
         {
-            sectionColor: '#FFE7E4',
+            sectionColor: '#191919',
             sectionContent: [
                 {
                     type: 'img',

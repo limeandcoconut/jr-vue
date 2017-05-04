@@ -8,11 +8,11 @@ export default {
     projectMainImage: {
         src: '/img/project-kamp-grizzly.png',
         alt: 'A beautiful image representing this project',
-        misalign: true,
+        // misalign: true,
     },
     projectInfo: {
         color: '#454444',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.' ,
+        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
         contextInfo: [
             {
                 copy: 'Working With',

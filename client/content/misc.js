@@ -4,6 +4,7 @@ export default {
     projectCoverImage: {
         src: '/img/project-misc-cover.jpg',
         alt: 'A beautiful image representing this project',
+        overlayColor: '#fff',
     },
     projectMainImage: {
         src: '/img/project-misc-cover.jpg',

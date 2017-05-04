@@ -1,6 +1,6 @@
 body {
     @include graphik;
-    background-color: #fff;
+    background-color: $bg-color;
     font-size: 16px;
 
 
@@ -10,6 +10,10 @@ body {
     -o-font-feature-settings:"liga", "kern";
     -webkit-font-feature-settings:"liga", "kern";
     font-feature-settings: "liga", "kern";
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
 }
 
 // .fab {
@@ -187,7 +191,7 @@ body {
 
     &--inline {
         display: inline-block;
-        font-weight: bold;
+        // font-weight: bold;
         overflow: visible;
 
         .hover-highlight__target {
