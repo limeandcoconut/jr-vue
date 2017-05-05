@@ -8,6 +8,11 @@ export default {
     projectMainImage: {
         src: '/img/project-kamp-grizzly.png',
         alt: 'A beautiful image representing this project',
+        style: {
+            top: '150px',
+            right: 0,
+            height: '560px',
+        },
         // misalign: true,
     },
     projectInfo: {
@@ -25,9 +30,9 @@ export default {
                 copy: 'Visit The Site',
             },
             {
-                copy: 'adidas.com/us/springissue',
+                copy: 'kampgrizzly.com',
                 link: true,
-                href: 'http://adidas.com/us/springissue',
+                href: 'http://kampgrizzly.com',
             },
         ],
     },

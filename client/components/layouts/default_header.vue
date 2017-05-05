@@ -4,48 +4,32 @@
             <div @mouseover="beginAnimation" @mouseleave="declineAnimation" @animationiteration="checkAnimation" v-el:logo class="header__logo logo"></div>
             <!-- <div @mouseover="beginAnimation" @mouseleave="declineAnimation" @animationiteration="checkAnimation" v-el:logo class="header__logo"></div> -->
         </a>
+        <scroll-up>
     </header>
 </template>
 
 <script>
-// import { logout } from '../../vuex/actions.js';
+import scrollUp from '../scrollup.vue';
+
 export default {
     name: 'header',
+    components: {
+        scrollUp,
+    },
     data() {
         return {
-            // show_admin: true,
-            // cart_count: 0,
             logoAnimated: false,
             logoHovered: false,
         };
     },
-    // vuex: {
-    //     getters: {
-    //         cart_total: state => state.get_cart_total,
-    //         is_authed: state => state.is_authed,
-    //     },
-    // },
     created() {
-        // if (localStorage.cart) {
-            // let cart = JSON.parse(localStorage.cart);
-            // cart.products.forEach(product => {
-            //     console.log(product);
-            // });
-            // this.cart_count = cart.count;
-            // this.cart_total = cart.total;
-        // }
     },
     ready() {
-        // console.log(this.$els.logo);
     },
     methods: {
-        // logout() {
-        //     logout(this.$store);
-        // },
         beginAnimation() {
             if (!this.logoHovered) {
                 this.$els.logo.className += ' logo--animated';
-                // this.$els.bubble.className += ' header__bubble--animated';
                 this.logoHovered = true;
                 this.logoAnimated = true;
             }

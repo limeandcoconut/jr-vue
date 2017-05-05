@@ -15,6 +15,7 @@
     "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "jsonwebtoken": "^7.0.1",
+    "raf": "^3.3.2",
     "rethinkdb": "^2.3.2",
     "thinky": "^2.3.2",
     "vue": "^1.0.26",

@@ -10,14 +10,14 @@
 
                 <div class="section__main">
                     <h2 class="section__copy section__copy--large">
-                        My name is James Ramirez. I love to make things that are useful and usable.
+                        Crafting meaningful and memorable digital experiences for nonprofits and lifestyle brands.
                     </h2>
                 </div>
             </section>
 
             <section  class="section">
                 <div class="section__aside">
-                    Recent Projects.
+                    Projects
                 </div>
                 <div class="section__main">
                     <a
@@ -51,13 +51,13 @@
 
             <section  class="section">
                 <div class="section__aside">
-                    Some achievements I'm proud of.
+                    Facts
                 </div>
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
 
-                        Graduated Bible College in Hungry, EU. I was a
-                        <span class="hover-highlight hover-highlight--inline link link--underlit">
+                        Studied Web Design at AI Portland.
+                        <!--<span class="hover-highlight hover-highlight--inline link link--underlit">
                             youth pastor
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-youth-pastor.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
@@ -73,30 +73,38 @@
                             house
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-house.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
-                        </span>
-                        I got
+                        </span>-->
+                        <br>
+                        Worked as a freelance designer and as lead Designer at cleverly.
+                        <br>
+                        Likes clean, simple, thoughtful design.
+                        <br>
+                        Married to
                         <span class="hover-highlight hover-highlight--inline link link--underlit">
-                            married
+                            Shawna.
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-married.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
                         </span>
-                        . I'm a
+                        <br>
+                        Dad to
                         <span class="hover-highlight hover-highlight--inline link link--underlit">
-                            dad
+                            Jack Wylie Ramirez.
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-dad.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
                         </span>
+                        <br>
+                        Has some theories on Tupac.
                     </div>
                 </div>
             </section>
 
             <section  class="section">
                 <div class="section__aside">
-                    Follow my narcissism.
+                    Follow
                 </div>
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
-                        <a href="#!" class="link link--follow">Twitter </a>   <a href="#!" class="link link--follow">       Dribbble</a>
+                        <a href="https://twitter.com/ramirezcjames" target="_blank" class="link link--follow">Twitter </a>   <a href="htttp://dribbble.com/jamescramirez" target="_blank" class="link link--follow">       Dribbble</a>
                     </div>
                 </div>
             </section>

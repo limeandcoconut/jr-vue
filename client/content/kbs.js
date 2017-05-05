@@ -6,10 +6,15 @@ export default {
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
-        hero: true,
+        // hero: true,
         // misalign: true,
         src: '/img/project-kbs.png',
         alt: 'A beautiful image representing this project',
+        style: {
+            top: 0,
+            right: 0,
+            height: '694px',
+        },
     },
     projectInfo: {
         color: '#459db7',

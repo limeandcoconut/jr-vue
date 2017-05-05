@@ -1,13 +1,25 @@
 <template>
-    <footer id="footer" class="hover-highlight">
+    <footer id="footer" class="hover-highlight section">
         <!-- <div class="footer__copyright"> -->
-            <!-- Copyright &copy; {{ moment(new Date()).format('YYYY') }} -->
+            <!-- Copyright &copy; {{ moment(new Date()).format('YYYY') }}
             <div class="footer__mailto hover-highlight__follow" :style="{ left: overlayLeft, top: overlayTop }">
                 Email
                 <br>
                 James Ramirez
+            </div> -->
+            <div class="section__main">
+            Got a project in mind?
+                <br>
+                Wanna grab a coffee
+                <br>
+                and quote Seinfeld?
+                <br>
+                Lets talk.
+                <br></div>
+            <div class="footer__mailto hover-highlight__follow" :style="{ left: overlayLeft, top: overlayTop }">
+                <a href="mailto:hello@jamescramirez.com" class="footer__link link">hello@jamescramirez.com</a>
             </div>
-            <a href="mailto:ramirez.c.james@gmail.com" class="hover-highlight__target" @mousemove="recordHover"></a>
+            <a href="mailto:hello@jamescramirez.com" class="hover-highlight__target" @mousemove="recordHover"></a>
         <!-- </div> -->
     </footer>
 </template>
@@ -32,10 +44,6 @@
                 this.recordedHoverLeft = event.offsetX;
                 this.recordedHoverTop = event.offsetY;
 
-                // console.log(event.offsetX. ' ' '
-                // );
-                console.log(this.recordedHoverLeft);
-
                 window.raf(this.followText);
             },
             recordHoverFromChild(event) {
@@ -43,14 +51,6 @@
 
                 this.recordedHoverLeft = event.offsetX + event.target.offsetLeft - (event.target.offsetWidth / 2);
                 this.recordedHoverTop = event.offsetY + event.target.offsetTop - (event.target.offsetHeight / 2);
-
-                // console.log(event.offsetX, '  ', this.recordedHoverLeft + 150);
-                // console.log(event.offsetY, '  ', this.recordedHoverTop);
-
-                // console.log(event.offsetX);
-                // console.log(event.target.offsetLeft);
-                // console.log(event.target.offsetWidth/2);
-                // console.log(event.target.offsetHeight);
 
                 window.raf(this.followText);
                 event.stopPropagation();

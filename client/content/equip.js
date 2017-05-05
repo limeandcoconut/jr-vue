@@ -8,10 +8,15 @@ export default {
     projectMainImage: {
         src: '/img/project-equip.jpg',
         alt: 'A beautiful image representing this project',
+        style: {
+            top: '105px',
+            right: 0,
+            height: '490px',
+        },
     },
     projectInfo: {
         color: '#3333fc',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.' ,
+        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
         contextInfo: [
             {
                 copy: 'Working With',

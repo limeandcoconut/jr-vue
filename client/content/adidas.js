@@ -9,9 +9,14 @@ export default {
         src: '/img/project-adidas-womens.png',
         alt: 'A beautiful image representing this project',
         // misalign: true,
+        style: {
+            top: '150px',
+            right: 0,
+            height: '560px',
+        },
     },
     projectInfo: {
-        color: '#02c09d',
+        color: '#24332C',
         copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
         contextInfo: [
             {

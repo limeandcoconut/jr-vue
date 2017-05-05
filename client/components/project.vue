@@ -5,23 +5,22 @@
 
 
             <section
-            class="section section--header section--split"
+            class="section section--header section--hero"
             :class="{'section--header-misalign': project.projectMainImage.misalign}"
             >
-                <div class="section__left">
-                    <h2 class="section__title">
-                        {{ project.projectName }}
-                    </h2>
-                </div>
+                <h2 class="section__title">
+                    {{ project.projectName }}
+                </h2>
 
-                <div class="section__right">
                     <img
                     :src="project.projectMainImage.src"
                     :alt="project.projectMainImage.alt"
-                    class="section__image section__image--right"
-                    :class="{'section__image--hero': project.projectMainImage.hero}"
+                    class="section__image section__image--hero"
+                    :style="project.projectMainImage.style"
                     >
-                </div>
+                <!--<div class="section__right">
+                    :class="{'section__image--hero': project.projectMainImage.hero}"
+                </div>-->
             </section>
 
             <section
