@@ -80,7 +80,18 @@ I designed custom icons for the app and simplified the booking process into just
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-kbs-single-2.jpg',
+                    src: '/img/project-kbs-single-2.png',
+                    alt: 'A beautiful image representing this project',
+                },
+            ],
+        },
+        {
+            sectionColor: '#E0DEDC',
+            sectionContent: [
+                {
+                    type: 'img',
+                    auto: true,
+                    src: '/img/project-kbs-single-3.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],

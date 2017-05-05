@@ -45,7 +45,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-womens-single.jpg',
+                    src: '/img/project-adidas-womens-single.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],

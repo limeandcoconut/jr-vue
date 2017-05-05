@@ -50,7 +50,7 @@ I hand-drew the logo hundreds of times, narrowing it down to four options and th
                 {
                     type: 'img',
                     full: true,
-                    src: '/img/project-equip-full-1.jpg',
+                    src: '/img/project-equip-full-1.png',
                     alt: 'A beautiful image representing several pages',
                 },
                 {
@@ -62,7 +62,7 @@ I hand-drew the logo hundreds of times, narrowing it down to four options and th
                 {
                     type: 'img',
                     full: true,
-                    src: '/img/project-equip-full-2.jpg',
+                    src: '/img/project-equip-full-2.png',
                     alt: 'A beautiful image representing several pages',
                 },
                 {

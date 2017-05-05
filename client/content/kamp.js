@@ -42,7 +42,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-kamp-grizzly-single.jpg',
+                    src: '/img/project-kamp-grizzly-single.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
