@@ -18,7 +18,13 @@ export default {
     },
     projectInfo: {
         color: '#459db7',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
+        copy: `KBS is one of the nation’s largest commercial real estate buyers, with properties from Newark, NJ to Newark, CA. Yeah, there’s a Newark, CA.
+ <br>
+ <br>
+KBS wanted to launch an app where tenants can book a conference space in any KBS-owned property nationwide. The app also needed to be desktop-accessible, so clients could book before heading out the door.
+ <br>
+ <br>
+I designed custom icons for the app and simplified the booking process into just a few steps. The end result was a streamlined reservation tool in a mobile app.  `,
         contextInfo: [
             {
                 copy: 'Working With',

@@ -68,14 +68,9 @@
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-graduated.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
                         </span>
-                        . I bought a
-                        <span class="hover-highlight hover-highlight--inline link link--underlit">
-                            house
-                            <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-house.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
-                            <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
-                        </span>-->
+                        . I >-->
                         <br>
-                        Worked as a freelance designer and as lead Designer at cleverly.
+                        Freelanced for a while, then joined Clever.ly as lead designer.
                         <br>
                         Likes clean, simple, thoughtful design.
                         <br>
@@ -92,6 +87,13 @@
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-dad.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
                         </span>
+                        <br>
+                        Bought a
+                        <span class="hover-highlight hover-highlight--inline link link--underlit">
+                            house.
+                            <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-house.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
+                            <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
+                        </span
                         <br>
                         Has some theories on Tupac.
                     </div>

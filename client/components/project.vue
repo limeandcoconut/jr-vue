@@ -28,8 +28,10 @@
             :style="{'background-color': project.projectInfo.color}"
             >
                 <div class="section__primary">
-                    <h2 class="section__copy section__copy--large">
-                        {{ project.projectInfo.copy }}
+                    <h2
+                    class="section__copy section__copy--large"
+                    v-html="project.projectInfo.copy"
+                    >
                     </h2>
                 </div>
 

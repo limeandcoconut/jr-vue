@@ -17,7 +17,7 @@ export default {
     },
     projectInfo: {
         color: '#454444',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
+        copy: 'Kamp Grizzly is a studio specializing in brand activation and generally rad work. For their new website, I crafted a clean, bold, straightforward glimpse into their portfolio and process. The design is heavy on visuals and light on copy, putting the focus on the work itself.',
         contextInfo: [
             {
                 copy: 'Working With',

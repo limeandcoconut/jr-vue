@@ -17,7 +17,10 @@ export default {
     },
     projectInfo: {
         color: '#24332C',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
+        copy: `A collaboration with Kamp Grizzly, adidas’ Spring Issue was a digital journey through the personal sport of eight different athletes and influencers, featuring adidas women’s spring line. Leading up to launch, each of the athletes/influencers took over adidas’ social for a week-a first for the sportswear giant, and the women’s brand in particular.
+        <br>
+        <br>
+        I led digital experience for the website and mobile design. In the process, I presented eight unique layouts for each athlete, pulling from their personality to define the design. This all went down in a month’s turnaround.  `,
         contextInfo: [
             {
                 copy: 'Working With',

@@ -1,6 +1,6 @@
 <template>
-    <div id="site_container">
-        <router-view class="view" transition transition-mode="out-in">
+    <div id="site_container" :class="{'animate-in': loading}">
+        <router-view class="view">
             <template v-if="show_auth">
                 <login></login>
             </template>
@@ -39,14 +39,18 @@ export default {
             template: this.$route.template,
             page: this.$route.page,
             show_auth: false,
+            loading: false,
         };
     },
     watch: {
         $route: function() {
-            console.log(this.$route);
             this.template = (this.$route.template) ? this.$route.template : 'default';
             this.page = (this.$route.page) ? this.$route.page : 'home';
+            this.loading = true;
+
+            setTimeout(() => {this.loading=false}, 500)
             // this.check_auth();
+
         },
     },
     created() {
@@ -63,6 +67,14 @@ export default {
         //         this.$store.dispatch('set_auth_status', event.newValue);
         //     }
         // });
+    },
+
+    transitions: {
+        fade: {
+            afterEnter() {
+alert(1);
+            },
+        },
     },
     methods: {
         // check_auth() {

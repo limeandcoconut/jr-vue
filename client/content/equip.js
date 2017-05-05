@@ -16,7 +16,9 @@ export default {
     },
     projectInfo: {
         color: '#3333fc',
-        copy: 'Working with awesome people at Kamp Grizzly. I was charged with designing the interactive experience for the Spring Issue.',
+        copy: `Equip is a high school ministry in Monterey, CA. When Equip wanted a new logo, I went for something that matched the energy and personality of the students, and felt relatable outside of a church setting—meaning, not a cross.
+<br>
+I hand-drew the logo hundreds of times, narrowing it down to four options and then refining from there. The freehand expression mimics the spontaneity of the students, with a loud electric blue that’s anything but modest. `,
         contextInfo: [
             {
                 copy: 'Working With',

@@ -210,8 +210,8 @@ h1, h2, h3, h4 {
     background-repeat: no-repeat;
     display: block;
     position: fixed;
-    bottom: 20vw;
-    right: 30px;
+    bottom: 90px;
+    right: 50px;
     width: 40px;
     height: 40px;
     opacity: 0;
@@ -220,6 +220,20 @@ h1, h2, h3, h4 {
     z-index: 1000;
 
     &--visible {
+        opacity: 1;
+    }
+}
+
+.animate-in {
+    animation: in 300ms;
+}
+
+@keyframes in {
+    from {
+        opacity: 0;
+    }
+
+    to {
         opacity: 1;
     }
 }
