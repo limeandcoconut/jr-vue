@@ -6,13 +6,17 @@
 
             <section
             class="section section--header section--hero"
-            :class="{'section--header-misalign': project.projectMainImage.misalign}"
+            :class="{'section--header-mini': project.projectHeaderMini}"
             >
-                <h2 class="section__title">
+                <h2
+                class="section__title"
+                :class="{'section__title--center': project.projectTitleCenter}"
+                >
                     {{ project.projectName }}
                 </h2>
 
                     <img
+                    v-if="project.projectMainImage"
                     :src="project.projectMainImage.src"
                     :alt="project.projectMainImage.alt"
                     class="section__image section__image--hero"
@@ -24,12 +28,13 @@
             </section>
 
             <section
-            class="section section--info section--split"
+            v-if="project.projectInfo"
+            class="section section--info section--split section--split-top"
             :style="{'background-color': project.projectInfo.color}"
             >
                 <div class="section__primary">
                     <h2
-                    class="section__copy section__copy--large"
+                    class="section__copy section__copy--info"
                     v-html="project.projectInfo.copy"
                     >
                     </h2>
@@ -133,14 +138,14 @@
 // import kamp from '../content/kamp.js';
 import Fader from './fader.vue';
 // console.log(Fader);
-import {kamp, adidas, equip, kbs, misc} from '../content/index.js';
+import {kamp, adidas, equip, kbs, miscellaneous} from '../content/index.js';
 
 let projects = {
     adidas,
     kamp,
     equip,
     kbs,
-    misc,
+    miscellaneous,
 };
 
 export default {
@@ -167,6 +172,8 @@ export default {
     methods: {
         retrieveProject() {
             let path = this.$route.path;
+            console.log(path)
+            console.log(projects[path])
             if (!path || !/^\/project/.test(path)) {
                 return;
             }

@@ -1,12 +1,12 @@
-import kamp from './kamp.js';
-export {kamp as kamp};
+import kamp from './kamp.js'
+export {kamp}
   // import test from './test.js';
   // export {test as test};
-import adidas from './adidas.js';
-export {adidas as adidas};
-import equip from './equip.js';
-export {equip as equip};
-import kbs from './kbs.js';
-export {kbs as kbs};
-import misc from './misc.js';
-export {misc as misc};
+import adidas from './adidas.js'
+export {adidas}
+import equip from './equip.js'
+export {equip}
+import kbs from './kbs.js'
+export {kbs}
+import misc from './misc.js'
+export {misc as miscellaneous}

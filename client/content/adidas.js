@@ -79,6 +79,10 @@ export default {
                             src: '/img/project-adidas-womens-fader-3.png',
                             alt: 'A beautiful image representing this project',
                         },
+                        {
+                            src: '/img/project-adidas-womens-fader-4.png',
+                            alt: 'A beautiful image representing this project',
+                        },
                     ],
                 },
             ],

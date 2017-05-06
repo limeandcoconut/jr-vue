@@ -56,7 +56,7 @@
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
 
-                        Studied Web Design at AI Portland.
+                        Studied Web Design & Development at at AI Portland.
                         <!--<span class="hover-highlight hover-highlight--inline link link--underlit">
                             youth pastor
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-youth-pastor.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
@@ -93,7 +93,7 @@
                             house.
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-house.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
                             <span class="hover-highlight__target hover-highlight__target--inline" @mousemove="recordHover">target</span>
-                        </span
+                        </span>
                         <br>
                         Has some theories on Tupac.
                     </div>
@@ -117,14 +117,14 @@
 
 <script>
 
-import {kamp, adidas, equip, kbs, misc} from '../content/index.js';
+import {kamp, adidas, equip, kbs, miscellaneous} from '../content/index.js';
 
 let projects = {
     adidas,
     kamp,
     equip,
     kbs,
-    misc,
+    miscellaneous,
 };
 
 export default {

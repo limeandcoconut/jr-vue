@@ -85,6 +85,10 @@
     &__primary {
         flex-grow: 2;
         margin-right: 10%;
+
+        @include tablet {
+            margin-bottom: 50px;
+        }
     }
 
     &__context {
@@ -127,12 +131,27 @@
             line-height: 1.4;
             // font-weight: 500;
         }
+
+        &--info {
+            font-size: 2.5vw;
+            line-height: 1.4;
+        }
     }
 
     &__title {
         font-size: 7.5vw;
         padding-top: 70px;
         max-width: 370px;
+
+        @include tablet {
+            padding-top: 20px;
+            margin-bottom: 30px;
+        }
+
+        &--center {
+            max-width: 100%;
+            text-align: center;
+        }
     }
 
     &__image {
@@ -175,6 +194,10 @@
             position: absolute;
             // top: -217px;
             // right: 0;
+
+            @include tablet {
+                position: static;
+            }
         }
     }
 
@@ -202,6 +225,10 @@
         margin-top: 180px;
         padding-top: 0;
         // padding-bottom: 0;
+
+        @include tablet {
+            margin-top: 0;
+        }
 
         .section__copy {
             margin-top: 0;
@@ -237,6 +264,14 @@
         flex-wrap: nowrap;
         flex-direction: row;
         min-height: 477px;
+
+        @include tablet {
+            display: block;
+        }
+
+        &-top {
+            align-items: flex-start;
+        }
     }
 
     &--hero {
@@ -247,6 +282,10 @@
         // flex-wrap: nowrap;
         // flex-direction: row;
         min-height: 477px;
+    }
+
+    &--header-mini {
+        min-height: initial;
     }
 
     &--info {
@@ -279,7 +318,9 @@
 
 .context {
     color: $white;
-    padding-bottom: 12px;
+    // padding-bottom: 12px;
+    font-size: 2.5vw;
+    line-height: 1.4;
 
     &--link {
         text-decoration: none;
@@ -402,6 +443,7 @@
     position: relative;
     text-align: center;
     // max-height: 80vh;
+    max-width: 270px;
     margin: 0 auto;
 
     &__slide {

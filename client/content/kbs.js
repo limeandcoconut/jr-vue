@@ -58,6 +58,18 @@ I designed custom icons for the app and simplified the booking process into just
                             src: '/img/project-kbs-fader-2.png',
                             alt: 'A beautiful image representing this project',
                         },
+                        {
+                            src: '/img/project-kbs-fader-3.png',
+                            alt: 'A beautiful image representing this project',
+                        },
+                        {
+                            src: '/img/project-kbs-fader-4.png',
+                            alt: 'A beautiful image representing this project',
+                        },
+                        {
+                            src: '/img/project-kbs-fader-5.png',
+                            alt: 'A beautiful image representing this project',
+                        },
                     ],
                 },
             ],

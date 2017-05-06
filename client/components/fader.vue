@@ -11,7 +11,7 @@
         >
 
         <div class="fader__indicator">
-            <span class="fader__incicator-number">{{ currentSlide }}</span>
+            <span class="fader__incicator-number">{{ currentSlide  +1 }}</span>
             / {{ slideCount }}
         </div>
     </div>

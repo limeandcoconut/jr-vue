@@ -1,90 +1,66 @@
 export default {
     projectName: 'Miscellaneous',
+    projectTitleCenter: true,
+    projectHeaderMini: true,
     projectUrl: 'miscellaneous',
     projectCoverImage: {
         src: '/img/project-misc-cover.jpg',
         alt: 'A beautiful image representing this project',
         overlayColor: '#fff',
     },
-    projectMainImage: {
-        src: '/img/project-misc-cover.jpg',
-        alt: 'A beautiful image representing this project',
-    },
-    projectHeader: 'In any event where the process is both swapped out and blocked, the occlusion processing automaton should not quickly accept a guidance function.',
     sections: [
         {
-            sectionTitle: 'Adidas Womens',
-            sectionColor: '#fff',
-            hasDivider: true,
+            sectionColor: 'transparent',
             sectionContent: [
                 {
-                    type: 'copy',
-                    content: 'AllIn computing, the auxiliary subdivision should not magically provide a context for the illumination circuit protocol, likewise, a integrated transmicroprocessor will systematically interact with the ambient bidirectional hardware. For certain types of computing applications, the buffering neural computer may or may not repeatedly find the subsurface framework. At any specific time, the temporary function may infinitely overload the abstraction function, but a hyperthreaded clustered infrastructure can not hourly enable a HDR near-field algorithm.',
+                    type: 'img',
+                    auto: true,
+                    spaced: true,
+                    src: '/img/project-misc-single-1.png',
+                    alt: 'A beautiful image representing several pages',
                 },
+            ],
+        },
+        {
+            sectionColor: 'transparent',
+            sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-womens.png',
+                    auto: true,
+                    src: '/img/project-misc-single-2.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
         },
         {
-            sectionTitle: '',
-            hasDivider: false,
-            sectionColor: '#EBD6D6',
+            sectionColor: 'transparent',
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-highlight-1.jpg',
+                    auto: true,
+                    src: '/img/project-misc-multi-1.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
         },
         {
-            sectionTitle: '',
-            sectionColor: '#fff',
-            hasDivider: false,
+            sectionColor: 'transparent',
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-highlight-2.jpg',
+                    auto: true,
+                    src: '/img/project-misc-multi-2.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
         },
         {
-            sectionTitle: '',
-            sectionColor: '#000',
-            copyColor: '#fff',
-            hasDivider: false,
-            sectionContent: [
-                {
-                    type: 'fader',
-                    slides: [
-                        {
-                            src: '/img/project-adidas-highlight-3.png',
-                            alt: 'A beautiful image representing this project',
-                        },
-                        {
-                            src: '/img/project-adidas-highlight-3-2.png',
-                            alt: 'A beautiful image representing this project',
-                        },
-                        {
-                            src: '/img/project-adidas-highlight-3-3.png',
-                            alt: 'A beautiful image representing this project',
-                        },
-                    ],
-                },
-            ],
-        },
-        {
-            sectionTitle: '',
-            sectionColor: '#EBE2D6',
-            hasDivider: false,
+            sectionColor: 'transparent',
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-highlight-4.jpg',
+                    auto: true,
+                    src: '/img/project-misc-single-3.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
