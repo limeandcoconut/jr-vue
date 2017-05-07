@@ -1,5 +1,5 @@
 <template>
-    <footer id="footer" class="hover-highlight section">
+    <footer id="footer" class="hover-highlight hover-highlight--stolid section">
         <!-- <div class="footer__copyright"> -->
             <!-- Copyright &copy; {{ moment(new Date()).format('YYYY') }}
             <div class="footer__mailto hover-highlight__follow" :style="{ left: overlayLeft, top: overlayTop }">

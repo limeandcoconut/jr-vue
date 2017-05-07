@@ -6,7 +6,7 @@ export default {
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
-        // hero: true,
+        heroMobile: true,
         // misalign: true,
         src: '/img/project-kbs.png',
         alt: 'A beautiful image representing this project',
@@ -25,23 +25,6 @@ KBS wanted to launch an app where tenants can book a conference space in any KBS
  <br>
  <br>
 I designed custom icons for the app and simplified the booking process into just a few steps. The end result was a streamlined reservation tool in a mobile app.  `,
-        contextInfo: [
-            {
-                copy: 'Working With',
-            },
-            {
-                copy: 'Clever.ly',
-                spaced: true,
-            },
-            {
-                copy: 'Visit The Site',
-            },
-            {
-                copy: 'adidas.com/us/springissue',
-                link: true,
-                href: 'http://adidas.com/us/springissue',
-            },
-        ],
     },
     sections: [
         {
@@ -83,6 +66,9 @@ I designed custom icons for the app and simplified the booking process into just
                     spaced: true,
                     src: '/img/project-kbs-single-1.png',
                     alt: 'A beautiful image representing several pages',
+                    style: {
+                        width: '50%',
+                    },
                 },
             ],
         },

@@ -8,6 +8,7 @@ export default {
     projectMainImage: {
         src: '/img/project-kamp-grizzly.png',
         alt: 'A beautiful image representing this project',
+        left: true,
         style: {
             top: '150px',
             right: 0,

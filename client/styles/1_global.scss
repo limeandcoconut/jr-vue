@@ -2,6 +2,7 @@ body {
     @include graphik;
     background-color: $bg-color;
     font-size: 16px;
+    overflow-x: hidden;
 
 
     -moz-font-feature-settings: "liga", "kern";
@@ -155,7 +156,15 @@ h1, h2, h3, h4 {
             transform: translate(-50%, calc(-100% - 1em));
             width: 300px;
             height: 0;
+        }
 
+        &--mobile-show {
+            @include tablet {
+                left: 50% !important;
+                top: 50% !important;
+                opacity: 1 !important;
+                height: auto;
+            }
         }
     }
 
@@ -174,6 +183,12 @@ h1, h2, h3, h4 {
         bottom: 0;
         right: 0;
         cursor: none;
+
+        &--mobile-show {
+            @include tablet {
+                cursor: default;
+            }
+        }
     }
 
     &:hover {
@@ -185,6 +200,23 @@ h1, h2, h3, h4 {
             &:hover {
                 height: 0;
                 opacity: 0;
+            }
+        }
+    }
+
+    &--stolid {
+
+        .hover-highlight__target {
+            @include tablet {
+                cursor: default;
+            }
+        }
+        &:hover {
+            .hover-highlight__follow {
+                &:hover {
+                    opacity: 1;
+                    height: auto;
+                }
             }
         }
     }
@@ -221,6 +253,10 @@ h1, h2, h3, h4 {
 
     &--visible {
         opacity: 1;
+    }
+
+    @include tablet {
+        display: none;
     }
 }
 

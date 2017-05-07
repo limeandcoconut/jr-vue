@@ -1,13 +1,20 @@
 <template>
     <div id="page-container">
-        <article class="project">
+        <article
+        class="project"
+        :class="{'project--slim': project.slimProfile}"
+        >
 
 
 
             <section
             class="section section--header section--hero"
-            :class="{'section--header-mini': project.projectHeaderMini}"
+            :class="{
+                'section--header-mini': project.projectHeaderMini,
+                'section--hero-mobile': project.projectMainImage && project.projectMainImage.heroMobile,
+            }"
             >
+
                 <h2
                 class="section__title"
                 :class="{'section__title--center': project.projectTitleCenter}"
@@ -21,9 +28,9 @@
                     :alt="project.projectMainImage.alt"
                     class="section__image section__image--hero"
                     :style="project.projectMainImage.style"
+                    :class="{'section__image--hero-left': project.projectMainImage.left, 'section__image--hero-mobile': project.projectMainImage.heroMobile}"
                     >
                 <!--<div class="section__right">
-                    :class="{'section__image--hero': project.projectMainImage.hero}"
                 </div>-->
             </section>
 
@@ -89,6 +96,7 @@
                                 'section__image--spaced': content.spaced,
                                 'section__image--auto': content.auto,
                             }"
+                            :style="content.style"
                             >
                             <fader
                             v-if="content.type === 'fader'"

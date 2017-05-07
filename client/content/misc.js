@@ -1,5 +1,6 @@
 export default {
     projectName: 'Miscellaneous',
+    slimProfile: true,
     projectTitleCenter: true,
     projectHeaderMini: true,
     projectUrl: 'miscellaneous',
@@ -7,6 +8,7 @@ export default {
         src: '/img/project-misc-cover.jpg',
         alt: 'A beautiful image representing this project',
         overlayColor: '#fff',
+        mobileVisible: true,
     },
     sections: [
         {

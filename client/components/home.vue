@@ -34,29 +34,32 @@
                             :alt="project.projectCoverImage.alt"
                             class="section__image project__img"
                             />
-                            <!-- <div @mousemove="recordHover" class="project__img-overlay" :index="$index"> -->
-                                <div
-                                class="project__overlay-text hover-highlight__follow"
-                                :style="{ left: overlayLeft, top: overlayTop, color: project.projectCoverImage.overlayColor || '#000'}"
-                                >
-                                    {{ project.projectName }}
-                                </div>
-                                <div @mousemove="recordHover"  class="project__hover-target hover-highlight__target"></div>
+                            <div
+                            class="project__overlay-text hover-highlight__follow"
+                            :class="{'hover-highlight__follow--mobile-show': project.projectCoverImage.mobileVisible}"
+                            :style="{ left: overlayLeft, top: overlayTop, color: project.projectCoverImage.overlayColor || '#000'}"
+                            >
+                                {{ project.projectName }}
+                            </div>
+                            <div
+                            @mousemove="recordHover"
+                            class="project__hover-target hover-highlight__target"
+                            :class="{'hover-highlight__target--mobile-show': project.projectCoverImage.mobileVisible}"
+                            >
                             </div>
                         </div>
                     </a>
-                    <!-- </template> -->
                 </div>
             </section>
 
-            <section  class="section">
+            <section  class="section section--desktop">
                 <div class="section__aside">
                     Facts
                 </div>
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
 
-                        Studied Web Design & Development at at AI Portland.
+                        Studied Web Design & Development at AI Portland.
                         <!--<span class="hover-highlight hover-highlight--inline link link--underlit">
                             youth pastor
                             <img class="hover-highlight__follow hover-highlight__follow--img" src="/img/highlight-youth-pastor.jpg" :style="{ left: overlayLeft, top: overlayTop }"/>
@@ -106,7 +109,7 @@
                 </div>
                 <div class="section__main">
                     <div class="section__copy section__copy--med">
-                        <a href="https://twitter.com/ramirezcjames" target="_blank" class="link link--follow">Twitter </a>   <a href="htttp://dribbble.com/jamescramirez" target="_blank" class="link link--follow">       Dribbble</a>
+                        <a href="https://twitter.com/ramirezcjames" target="_blank" class="link link--follow">Twitter </a>   <a href="http://dribbble.com/jamescramirez" target="_blank" class="link link--follow">       Dribbble</a>
                     </div>
                 </div>
             </section>

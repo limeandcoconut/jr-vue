@@ -6,6 +6,16 @@
 
 .project {
     // position: relative;
+    &--slim {
+        .section {
+            width: 65%;
+            margin: 0 auto;
+
+            @include tablet {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .section {
@@ -22,6 +32,8 @@
     @include tablet {
         padding-top: 30px;
         padding-bottom: 35px;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
     &__aside {
@@ -40,13 +52,12 @@
         color: $black;
         z-index: 10;
 
-
         @include tablet {
             position: relative;
             top: 0;
             left: 0;
             width: 100%;
-            padding: 0 5% 20px;
+            padding: 0 0 20px;
         }
 
         // &--work {
@@ -62,7 +73,7 @@
         padding: 0 15%;
 
         @include tablet {
-            padding: 0 5%;
+            padding: 0;
         }
     }
 
@@ -93,7 +104,7 @@
 
     &__context {
         flex-grow: 1;
-        font-size: 1.56rem;
+        font-size: 2vw;
     }
 
     &__copy {
@@ -116,6 +127,10 @@
             font-size: 5.5vw;
             line-height: 1.4;
             // letter-spacing: 0.44px;
+
+            @include tablet {
+                font-size: 30px;
+            }
         }
 
         &--bold {
@@ -135,6 +150,10 @@
         &--info {
             font-size: 2.5vw;
             line-height: 1.4;
+
+            @include tablet {
+                font-size: 20px;
+            }
         }
     }
 
@@ -146,6 +165,7 @@
         @include tablet {
             padding-top: 20px;
             margin-bottom: 30px;
+            font-size: 50px;
         }
 
         &--center {
@@ -195,8 +215,31 @@
             // top: -217px;
             // right: 0;
 
+            @media screen and (max-width: 1050px) {
+                right: calc(100vw - 1050px) !important;
+            }
+
             @include tablet {
-                position: static;
+                position: relative;
+                top: auto !important;
+                right: -5vw !important;
+                width: auto !important;
+                height: auto !important;
+                max-width: 100%;
+            }
+
+            &-left {
+                display: block;
+                margin-right: -5vw;
+            }
+
+            &-mobile {
+                @include tablet {
+                    position: absolute;
+                    top: 0 !important;
+                    right: 0 !important;
+                    max-width: 76%;
+                }
             }
         }
     }
@@ -282,6 +325,17 @@
         // flex-wrap: nowrap;
         // flex-direction: row;
         min-height: 477px;
+
+        &-mobile {
+
+            @media screen and (max-width: 450px) {
+                min-height: 30px;
+            }
+
+            @include tablet {
+                min-height: 39vw;
+            }
+        }
     }
 
     &--header-mini {
@@ -291,6 +345,10 @@
     &--info {
         color: $white;
         min-height: 720px;
+
+        @include tablet {
+            min-height: initial;
+        }
     }
 
     &--black {
@@ -314,6 +372,12 @@
             color: $grey;
         }
     }
+
+    &--desktop {
+        @include tablet {
+            display: none;
+        }
+    }
 }
 
 .context {
@@ -321,6 +385,10 @@
     // padding-bottom: 12px;
     font-size: 2.5vw;
     line-height: 1.4;
+
+    @include tablet {
+        font-size: 20px;
+    }
 
     &--link {
         text-decoration: none;

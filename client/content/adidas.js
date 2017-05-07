@@ -8,6 +8,7 @@ export default {
     projectMainImage: {
         src: '/img/project-adidas-womens.png',
         alt: 'A beautiful image representing this project',
+        left: true,
         // misalign: true,
         style: {
             top: '150px',
