@@ -220,26 +220,43 @@
             }
 
             @include tablet {
-                position: relative;
-                top: auto !important;
-                right: -5vw !important;
+                position: static;
+                max-width: 100%;
                 width: auto !important;
                 height: auto !important;
-                max-width: 100%;
+
             }
 
             &-left {
                 display: block;
                 margin-right: -5vw;
+
+                @include tablet {
+                    position: relative;
+                    top: auto !important;
+                    right: -5vw !important;
+                }
             }
 
             &-mobile {
-                @include tablet {
-                    position: absolute;
-                    top: 0 !important;
-                    right: 0 !important;
-                    max-width: 76%;
+
+                 @media screen and (max-width: 1200px) {
+                    right: calc(100vw - 1200px) !important;
                 }
+
+                @include tablet {
+                    // position: absolute;
+                    // top: 0 !important;
+                    // right: 0 !important;
+                    // max-width: 76%;
+                    position: absolute;
+                    top: -3vw !important;
+                    right: auto !important;
+                    left: 35%;
+                    max-width: initial;
+                    height: calc(90vw + 100px) !important;
+                }
+
             }
         }
     }
@@ -328,12 +345,8 @@
 
         &-mobile {
 
-            @media screen and (max-width: 450px) {
-                min-height: 30px;
-            }
-
             @include tablet {
-                min-height: 39vw;
+                min-height: 74vw;
             }
         }
     }

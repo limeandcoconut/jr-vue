@@ -13,7 +13,7 @@ export default {
         style: {
             top: 0,
             right: 0,
-            height: '694px',
+            height: '830px',
         },
     },
     projectInfo: {

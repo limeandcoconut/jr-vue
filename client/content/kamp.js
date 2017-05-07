@@ -53,7 +53,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-kamp-grizzly-multi.jpg',
+                    src: '/img/project-kamp-grizzly-multi.png',
                     alt: 'A beautiful image representing several pages',
                 },
             ],
