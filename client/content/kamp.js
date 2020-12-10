@@ -2,11 +2,11 @@ export default {
     projectName: 'Kamp Grizzly',
     projectUrl: 'kamp',
     projectCoverImage: {
-        src: '/img/project-kamp-grizzly-cover.jpg',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kamp-grizzly-cover.jpg',
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
-        src: '/img/project-kamp-grizzly.png',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kamp-grizzly.png',
         alt: 'A beautiful image representing this project',
         left: true,
         style: {
@@ -43,7 +43,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-kamp-grizzly-single.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kamp-grizzly-single.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
@@ -53,7 +53,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-kamp-grizzly-multi.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kamp-grizzly-multi.png',
                     alt: 'A beautiful image representing several pages',
                 },
             ],

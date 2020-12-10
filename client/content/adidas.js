@@ -2,11 +2,11 @@ export default {
     projectName: 'Adidas Women\'s',
     projectUrl: 'adidas',
     projectCoverImage: {
-        src: '/img/project-adidas-womens-cover.jpg',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-cover.jpg',
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
-        src: '/img/project-adidas-womens.png',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens.png',
         alt: 'A beautiful image representing this project',
         left: true,
         // misalign: true,
@@ -46,7 +46,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-womens-single.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-single.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
@@ -56,7 +56,7 @@ export default {
             sectionContent: [
                 {
                     type: 'img',
-                    src: '/img/project-adidas-womens-multi.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-multi.png',
                     alt: 'A beautiful image representing several pages',
                 },
             ],
@@ -69,19 +69,19 @@ export default {
                     type: 'fader',
                     slides: [
                         {
-                            src: '/img/project-adidas-womens-fader-1.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-fader-1.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-adidas-womens-fader-2.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-fader-2.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-adidas-womens-fader-3.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-fader-3.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-adidas-womens-fader-4.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-adidas-womens-fader-4.png',
                             alt: 'A beautiful image representing this project',
                         },
                     ],

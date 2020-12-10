@@ -5,7 +5,7 @@ export default {
     projectHeaderMini: true,
     projectUrl: 'miscellaneous',
     projectCoverImage: {
-        src: '/img/project-misc-cover.jpg',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-misc-cover.jpg',
         alt: 'A beautiful image representing this project',
         overlayColor: '#fff',
         mobileVisible: true,
@@ -18,7 +18,7 @@ export default {
                     type: 'img',
                     auto: true,
                     spaced: true,
-                    src: '/img/project-misc-single-1.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-misc-single-1.png',
                     alt: 'A beautiful image representing several pages',
                 },
             ],
@@ -29,7 +29,7 @@ export default {
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-misc-single-2.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-misc-single-2.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
@@ -40,7 +40,7 @@ export default {
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-misc-multi-1.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-misc-multi-1.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
@@ -51,7 +51,7 @@ export default {
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-misc-multi-2.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-misc-multi-2.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
@@ -62,7 +62,7 @@ export default {
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-misc-single-3.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-misc-single-3.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],

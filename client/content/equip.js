@@ -2,11 +2,11 @@ export default {
     projectName: 'Equip',
     projectUrl: 'equip',
     projectCoverImage: {
-        src: '/img/project-equip-cover.jpg',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip-cover.jpg',
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
-        src: '/img/project-equip.jpg',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip.jpg',
         alt: 'A beautiful image representing this project',
         style: {
             top: '105px',
@@ -27,31 +27,31 @@ I hand-drew the logo hundreds of times, narrowing it down to four options and th
                 {
                     type: 'img',
                     spaced: true,
-                    src: '/img/project-equip-single-1.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip-single-1.png',
                     alt: 'A beautiful image representing this project',
                 },
                 {
                     type: 'img',
                     full: true,
-                    src: '/img/project-equip-full-1.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip-full-1.png',
                     alt: 'A beautiful image representing several pages',
                 },
                 {
                     type: 'img',
                     spaced: true,
-                    src: '/img/project-equip-single-2.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip-single-2.png',
                     alt: 'A beautiful image representing this project',
                 },
                 {
                     type: 'img',
                     full: true,
-                    src: '/img/project-equip-full-2.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip-full-2.png',
                     alt: 'A beautiful image representing several pages',
                 },
                 {
                     type: 'img',
                     spaced: true,
-                    src: '/img/project-equip-single-3.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-equip-single-3.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],

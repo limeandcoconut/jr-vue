@@ -2,13 +2,13 @@ export default {
     projectName: 'KBS',
     projectUrl: 'kbs',
     projectCoverImage: {
-        src: '/img/project-kbs-cover.jpg',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-cover.jpg',
         alt: 'A beautiful image representing this project',
     },
     projectMainImage: {
         heroMobile: true,
         // misalign: true,
-        src: '/img/project-kbs.png',
+        src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs.png',
         alt: 'A beautiful image representing this project',
         style: {
             top: 0,
@@ -34,23 +34,23 @@ I designed custom icons for the app and simplified the booking process into just
                     type: 'fader',
                     slides: [
                         {
-                            src: '/img/project-kbs-fader-1.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-fader-1.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-kbs-fader-2.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-fader-2.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-kbs-fader-3.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-fader-3.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-kbs-fader-4.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-fader-4.png',
                             alt: 'A beautiful image representing this project',
                         },
                         {
-                            src: '/img/project-kbs-fader-5.png',
+                            src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-fader-5.png',
                             alt: 'A beautiful image representing this project',
                         },
                     ],
@@ -64,7 +64,7 @@ I designed custom icons for the app and simplified the booking process into just
                     type: 'img',
                     auto: true,
                     spaced: true,
-                    src: '/img/project-kbs-single-1.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-single-1.png',
                     alt: 'A beautiful image representing several pages',
                     style: {
                         width: '50%',
@@ -78,7 +78,7 @@ I designed custom icons for the app and simplified the booking process into just
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-kbs-single-2.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-single-2.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
@@ -89,7 +89,7 @@ I designed custom icons for the app and simplified the booking process into just
                 {
                     type: 'img',
                     auto: true,
-                    src: '/img/project-kbs-single-3.png',
+                    src: 'https://jr-vue.s3-us-west-2.amazonaws.com/project-kbs-single-3.png',
                     alt: 'A beautiful image representing this project',
                 },
             ],
